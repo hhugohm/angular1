@@ -97,26 +97,20 @@
     <script>
         angular.module('diveLog', [])
             .controller('diveLogCtrl', DiveLogCtrl);
-
         function DiveLogCtrl($scope) {
             $scope.showInfo = true;
             $scope.showForm = false;
-
-
             $scope.agregar = function() {
                 //alert('agregar elemento');
                 $scope.showForm = true;
                 $scope.showInfo = false;
             }
-
-
             $scope.addItem=function(){
               console.log($scope.zone);
               $scope.dives.push($scope.zone);
               $scope.showForm = false;
               $scope.showInfo = true;
             }
-
             $scope.dives = [{
                 site: 'Abu Gotta Ramada',
                 location: 'Hurghada, Egypt',
