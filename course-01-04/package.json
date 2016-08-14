@@ -1,7 +1,7 @@
 {
   "name": "ExamplesAngular1",
   "version": "1.0.0",
-  "description": "This project contains the samples of angular",
+  "description": "This project contains the samples of angular 1",
   "scripts": {
     "live": "live-server",
     "start": "npm run live"
