@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="diveLog">
+
+<head>
+    <title>Dive Log (ng-controller)</title>
+    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="diveLogCtrl">
+    <div class="container-fluid">
+        <h1>My Latest Dives (ng-contoller)</h1>
+        <div class="row" ng-show="showInfo">
+            <!--
+      <div class="col-sm-4"
+        ng-repeat="dive in dives">
+        <h3>{{dive.site}}</h3>
+        <h4>{{dive.location}}</h4>
+        <h2>{{dive.depth}} feet | {{dive.time}} min</h2>
+      </div>
+    -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Site</th>
+                        <th>Location</th>
+                        <th>Depth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="dive in dives">
+                        <td>{{dive.site}}</td>
+                        <td>{{dive.location}}</td>
+                        <td>{{dive.depth}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" ng-click="agregar()">Nuevo</button>
+        </div>
+
+        <div class="row" ng-show="showForm">
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Form Name</legend>
+
+                    <!-- Search input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="searchinput">Location</label>
+                        <div class="col-md-4">
+                            <input ng-model="zone.location" id="searchinput" name="searchinput" type="search" placeholder="" class="form-control input-md">
+
+                        </div>
+                    </div>
+
+                    <!-- Search input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="searchinput">Site</label>
+                        <div class="col-md-4">
+                            <input ng-model="zone.site" id="searchinput" name="searchinput" type="search" placeholder="" class="form-control input-md">
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinp">Depth</label>
+                        <div class="col-md-4">
+                            <input ng-model="zone.depth" id="textinp" name="textinp" type="text" placeholder="" class="form-control input-md">
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <div class="col-md-4">
+                            <button ng-click="addItem()" id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+
+
+        </div>
+
+    </div>
+    <script src="./lib/angular/angular.min.js"></script>
+    <!--
+  <script src="dives.js"></script> -->
+    <script>
+        angular.module('diveLog', [])
+            .controller('diveLogCtrl', DiveLogCtrl);
+
+        function DiveLogCtrl($scope) {
+            $scope.showInfo = true;
+            $scope.showForm = false;
+
+
+            $scope.agregar = function() {
+                //alert('agregar elemento');
+                $scope.showForm = true;
+                $scope.showInfo = false;
+            }
+
+
+            $scope.addItem=function(){
+              console.log($scope.zone);
+              $scope.dives.push($scope.zone);
+              $scope.showForm = false;
+              $scope.showInfo = true;
+            }
+
+            $scope.dives = [{
+                site: 'Abu Gotta Ramada',
+                location: 'Hurghada, Egypt',
+                depth: 72,
+                time: 54
+            }, {
+                site: 'Ponte Mahoon',
+                location: 'Maehbourg, Mauritius',
+                depth: 54,
+                time: 38
+            }, {
+                site: 'Molnar Cave',
+                location: 'Budapest, Hungary',
+                depth: 98,
+                time: 62
+            }];
+        }
+    </script>
+</body>
+
+</html>
