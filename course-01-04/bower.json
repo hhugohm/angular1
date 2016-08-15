@@ -1,12 +1,12 @@
 {
   "name": "exampleangular",
   "description": "This project contains the samples of angular 1",
+  "homepage": "https://github.com/hhugohm/angular1",
   "main": "index.html",
   "authors": [
     "Mario Hidalgo / Hector Hugo Hidalgo(hhugohm@icloud.com)"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/hhugohm/angular1",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "jquery": "^3.1.0",
