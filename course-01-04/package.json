@@ -2,11 +2,12 @@
   "name": "ExamplesAngular1",
   "version": "1.0.0",
   "description": "This project contains the samples of angular 1",
+  "repository": "https://github.com/hhugohm/angular1",
   "scripts": {
     "postinstall": "bower install",
-      "prestart": "npm install",
-      "start": "http-server ./src -a localhost -p 8080 c-1",
-      "pretest": "npm install"
+    "prestart": "npm install",
+    "start": "http-server ./src -a localhost -p 8080 c-1",
+    "pretest": "npm install"
   },
   "keywords": [],
   "author": "Mario Hidalgo / Hector Hugo Hidalgo(hhugohm@icloud.com)",
@@ -14,12 +15,7 @@
   "dependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
-    "angular": "^1.5.0",
-    "angular-messages": "^1.5.0",
-    "angular-route": "^1.5.0",
-    "bootstrap": "^3.3.7",
     "install": "^0.8.1",
-    "jquery": "^3.1.0",
     "npm": "^3.10.6"
   },
   "devDependencies": {
