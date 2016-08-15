@@ -3,11 +3,11 @@
 
 <head>
     <title>Dive Log (ng-controller)</title>
-    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- jQuery library -->
-<script src="././lib/jquery/jquery.min.js"></script>
+<script src="./lib/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
-<script src="./lib/bootstrap/bootstrap.min.js"></script>
+<script src="./lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body ng-controller="diveLogCtrl">
@@ -43,11 +43,8 @@
 
         <div class="row" ng-show="showForm">
             <form class="form-horizontal">
-                <fieldset>
-
+              <h2>Form Name</h2>
                     <!-- Form Name -->
-                    <legend>Form Name</legend>
-
                     <!-- Search input-->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="searchinput">Location</label>
@@ -91,7 +88,7 @@
         </div>
 
     </div>
-    <script src="./lib/angular/angular.min.js"></script>
+    <script src="./lib/bower_components/angular/angular.min.js"></script>
     <!--
   <script src="dives.js"></script> -->
     <script>
