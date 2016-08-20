@@ -1,0 +1,18 @@
+{
+  "name": "exampleangular",
+  "description": "This project contains the samples of angular 1",
+  "homepage": "https://github.com/hhugohm/angular1",
+  "main": "index.html",
+  "authors": [
+    "Mario Hidalgo / Hector Hugo Hidalgo(hhugohm@icloud.com)"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "angular": "1.5",
+    "angular-messages": "1.5",
+    "angular-route": "1.5"
+  }
+}
