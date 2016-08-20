@@ -9,9 +9,9 @@
 <!-- Latest compiled JavaScript -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <style type="text/css">
-  .invalidField{
+  .input.ng-invalid.ng-toauched{
     border: 2px solid maroon;
-    background-color: lightpink
+    background-color: lightpink;
   }
 
 </style>
@@ -50,14 +50,14 @@
         </div>
 
         <div class="row" ng-show="showForm">
-            <form class="form-horizontal" name="formLocation">
+            <form class="form-horizontal" name="formLocation" novalidate>
               <h2>Form Name</h2>
                     <!-- Form Name -->
                     <!-- Search input-->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="searchinput">Location</label>
                         <div class="col-md-4">
-                            <input ng-model="zone.location" ng-class="{invalidField:formLocation.location.$invalid}"  id="searchinput" name="location" type="search" placeholder="" class="form-control input-md" required>
+                            <input ng-model="zone.location"   id="searchinput" name="location" type="search" placeholder="" class="form-control input-md" required>
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="searchinput">Site</label>
                         <div class="col-md-4">
-                            <input ng-model="zone.site"  ng-class="{invalidField:formLocation.site.$invalid}" id="site" name="site" type="site" placeholder="" class="form-control input-md" required>
+                            <input ng-model="zone.site"   id="site" name="site" type="site" placeholder="" class="form-control input-md" required>
 
                         </div>
                     </div>
