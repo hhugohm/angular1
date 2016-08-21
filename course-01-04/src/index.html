@@ -11,7 +11,7 @@
 <style type="text/css">
   .invalidField{
     border: 2px solid maroon;
-    background-color: lightpink
+    background-color: lightpink;
   }
 
 </style>
@@ -20,7 +20,7 @@
 
 <body ng-controller="diveLogCtrl">
     <div class="container-fluid">
-        <h1>My Latest Dives (ng-contoller)</h1>
+        <h1>My Latest Dives (ng-contoller) cambio</h1>
         <div class="row" ng-show="showInfo">
             <!--
       <div class="col-sm-4"
@@ -76,7 +76,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="textinp">Depth</label>
                         <div class="col-md-4">
-                            <input ng-model="zone.depth" id="textinp" name="textinp" type="text" placeholder="" class="form-control input-md">
+                            <input ng-model="zone.depth" ng-class="{invalidField:formLocation.depth.$invalid}"  id="depth" name="depth" type="text" placeholder="" class="form-control input-md" required>
                         </div>
                     </div>
 
