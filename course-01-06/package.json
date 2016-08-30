@@ -10,7 +10,7 @@
     "pretest": "npm install"
   },
   "keywords": [],
-  "author": "Mario Hidalgo / Hector Hugo Hidalgo(hhugohm@icloud.com)",
+  "author": "Mario Hidalgo (mario@dominio.com) / Hector Hugo Hidalgo(hhugohm@icloud.com)",
   "license": "ISC",
   "dependencies": {
     "bower": "^1.7.7",
