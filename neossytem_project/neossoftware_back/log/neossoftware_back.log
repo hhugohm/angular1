@@ -136,10 +136,542 @@
 {"level":"debug","message":":::NAME & LASTNAME::::","timestamp":"2016-08-29T21:54:59.933Z"}
 {"level":"debug","message":":::EXECUTE UPDATE A QUERY::::","timestamp":"2016-08-29T21:54:59.933Z"}
 {"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-29T21:55:00.035Z"}
-{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T00:37:15.994Z"}
-{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T00:37:15.997Z"}
-{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T00:37:15.997Z"}
-{"level":"debug","message":"FECHA:::::::::::29/37/2016 19:08.15","timestamp":"2016-08-30T00:37:16.000Z"}
-{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T00:37:16.048Z"}
-{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T00:37:16.049Z"}
-{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T00:37:16.049Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:01:44.244Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:01:44.245Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:01:44.246Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:01:44.262Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:01:44.263Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:01:44.263Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:01:44.263Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:20:41.392Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:20:41.393Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:20:41.393Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:41.399Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:20:41.400Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:41.400Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:20:41.401Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:20:46.246Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:20:46.247Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:20:46.247Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:46.252Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:20:46.253Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:46.253Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:20:46.253Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:20:51.200Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:20:51.201Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:20:51.201Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:51.206Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:20:51.207Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:51.207Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:20:51.207Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:20:53.485Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:20:53.485Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:20:53.486Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:53.490Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:20:53.490Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:20:53.491Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:20:53.491Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:21:04.146Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:21:04.146Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:21:04.147Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:21:04.150Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:21:04.150Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:21:04.150Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:21:04.151Z"}
+{"level":"debug","message":"WEBSERVICE...2","timestamp":"2016-08-30T15:21:15.351Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:21:15.352Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::2","timestamp":"2016-08-30T15:21:15.352Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-30T15:21:15.357Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-30T15:21:15.357Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:21:15.357Z"}
+{"level":"debug","message":"WEBSERVICE...2","timestamp":"2016-08-30T15:21:19.108Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:21:19.108Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::2","timestamp":"2016-08-30T15:21:19.109Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-30T15:21:19.112Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-30T15:21:19.112Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:21:19.112Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:21:52.189Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:21:52.190Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:21:52.190Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:21:52.195Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:21:52.196Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:21:52.196Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:21:52.196Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS DELETE  USER BY ID::::","timestamp":"2016-08-30T15:22:21.746Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T15:22:21.747Z"}
+{"level":"debug","message":":::RESULTADO::::0","timestamp":"2016-08-30T15:22:21.752Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:22:21.753Z"}
+{"level":"debug","message":":::SUCCES::::[object Object]","timestamp":"2016-08-30T15:22:21.753Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:22:21.754Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:22:26.513Z"}
+{"level":"debug","message":":::LASTNAME::::Hidalgo","timestamp":"2016-08-30T15:22:26.514Z"}
+{"level":"debug","message":":::NAME & LASTNAME::::","timestamp":"2016-08-30T15:22:26.514Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY::::","timestamp":"2016-08-30T15:22:26.514Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:22:26.579Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:22:43.802Z"}
+{"level":"debug","message":":::LASTNAME::::Hidalgo","timestamp":"2016-08-30T15:22:43.803Z"}
+{"level":"debug","message":":::NAME & LASTNAME::::","timestamp":"2016-08-30T15:22:43.804Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY::::","timestamp":"2016-08-30T15:22:43.804Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:22:43.932Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:23:01.814Z"}
+{"level":"debug","message":":::LASTNAME::::Hidalgo","timestamp":"2016-08-30T15:23:01.815Z"}
+{"level":"debug","message":":::NAME & LASTNAME::::","timestamp":"2016-08-30T15:23:01.815Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY::::","timestamp":"2016-08-30T15:23:01.815Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:23:01.887Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:23:19.771Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:23:19.772Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:23:19.772Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:23:19.780Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:23:19.780Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:23:19.781Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:23:19.781Z"}
+{"level":"debug","message":":::NAME::::undefined","timestamp":"2016-08-30T15:23:49.541Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:23:49.541Z"}
+{"level":"debug","message":":::NO DATA USER::::","timestamp":"2016-08-30T15:23:49.542Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:23:49.542Z"}
+{"level":"debug","message":":::NAME::::undefined","timestamp":"2016-08-30T15:24:00.830Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:24:00.830Z"}
+{"level":"debug","message":":::NO DATA USER::::","timestamp":"2016-08-30T15:24:00.831Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:24:00.831Z"}
+{"level":"debug","message":":::NAME::::undefined","timestamp":"2016-08-30T15:24:20.998Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:24:20.998Z"}
+{"level":"debug","message":":::NO DATA USER::::","timestamp":"2016-08-30T15:24:20.998Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:24:20.999Z"}
+{"level":"debug","message":":::NAME::::undefined","timestamp":"2016-08-30T15:25:22.951Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:25:22.952Z"}
+{"level":"debug","message":":::NO DATA USER::::","timestamp":"2016-08-30T15:25:22.952Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:25:22.952Z"}
+{"level":"debug","message":":::NAME::::undefined","timestamp":"2016-08-30T15:30:07.717Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:30:07.724Z"}
+{"level":"debug","message":":::NO DATA USER::::","timestamp":"2016-08-30T15:30:07.726Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:30:07.727Z"}
+{"level":"debug","message":":::NAME::::undefined","timestamp":"2016-08-30T15:33:01.283Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:33:01.285Z"}
+{"level":"debug","message":":::NO DATA USER::::","timestamp":"2016-08-30T15:33:01.285Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T15:33:01.286Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:43:05.254Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:43:05.256Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T15:43:05.256Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T15:43:05.257Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:43:05.345Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T15:47:40.522Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T15:47:40.523Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T15:47:40.523Z"}
+{"level":"debug","message":"FECHA:::::::::::30/47/2016 10:08.40","timestamp":"2016-08-30T15:47:40.525Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:47:40.535Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T15:47:40.536Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:47:40.537Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:47:45.031Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:47:45.031Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:47:45.032Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:47:45.037Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:47:45.037Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:47:45.038Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:47:45.038Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS DELETE  USER BY ID::::","timestamp":"2016-08-30T15:47:48.521Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T15:47:48.522Z"}
+{"level":"debug","message":":::RESULTADO::::0","timestamp":"2016-08-30T15:47:48.526Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:47:48.526Z"}
+{"level":"debug","message":":::SUCCES::::[object Object]","timestamp":"2016-08-30T15:47:48.527Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:47:48.527Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T15:48:01.816Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T15:48:01.817Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T15:48:01.817Z"}
+{"level":"debug","message":"FECHA:::::::::::30/48/2016 10:08.01","timestamp":"2016-08-30T15:48:01.818Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:48:01.827Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T15:48:01.827Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:48:01.828Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T15:48:28.397Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T15:48:28.398Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T15:48:28.398Z"}
+{"level":"debug","message":"FECHA:::::::::::30/48/2016 10:08.28","timestamp":"2016-08-30T15:48:28.399Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:48:28.408Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T15:48:28.409Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:48:28.411Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:49:25.310Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:49:25.310Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T15:49:25.311Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T15:49:25.311Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:49:25.390Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:50:16.243Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:50:16.243Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T15:50:16.244Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T15:50:16.245Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:50:16.366Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:50:36.276Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:50:36.277Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T15:50:36.278Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T15:50:36.278Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:50:36.375Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:50:55.812Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:50:55.813Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T15:50:55.813Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T15:50:55.814Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:50:55.845Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T15:52:33.513Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T15:52:33.514Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T15:52:33.514Z"}
+{"level":"debug","message":"FECHA:::::::::::30/52/2016 10:08.33","timestamp":"2016-08-30T15:52:33.515Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:52:33.523Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T15:52:33.524Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:52:33.524Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T15:58:57.192Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T15:58:57.194Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T15:58:57.195Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T15:58:57.195Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:58:57.322Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS DELETE  USER BY ID::::","timestamp":"2016-08-30T15:59:14.276Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T15:59:14.277Z"}
+{"level":"debug","message":":::RESULTADO::::0","timestamp":"2016-08-30T15:59:14.283Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:59:14.284Z"}
+{"level":"debug","message":":::SUCCES::::[object Object]","timestamp":"2016-08-30T15:59:14.285Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:59:14.285Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T15:59:22.127Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T15:59:22.127Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T15:59:22.128Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:59:22.138Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T15:59:22.138Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T15:59:22.139Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T15:59:22.139Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T16:00:09.608Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T16:00:09.609Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T16:00:09.609Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T16:00:09.610Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:00:09.683Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T16:00:28.425Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T16:00:28.426Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T16:00:28.427Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T16:00:28.427Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:00:28.520Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T16:00:36.537Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T16:00:36.537Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T16:00:36.537Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T16:00:36.538Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:00:36.610Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T16:00:49.855Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T16:00:49.856Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T16:00:49.857Z"}
+{"level":"debug","message":"FECHA:::::::::::30/00/2016 11:08.49","timestamp":"2016-08-30T16:00:49.859Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:00:49.869Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T16:00:49.870Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:00:49.870Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:03:28.934Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:03:28.936Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:03:28.955Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:03:28.955Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:03:28.955Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:03:28.956Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:04:24.399Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:04:24.400Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:04:24.407Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:04:24.408Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:04:24.409Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:04:24.409Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:07:58.178Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:07:58.180Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:07:58.201Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:07:58.201Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:07:58.202Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:07:58.202Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T16:08:04.784Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T16:08:04.785Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T16:08:04.785Z"}
+{"level":"debug","message":"FECHA:::::::::::30/08/2016 11:08.04","timestamp":"2016-08-30T16:08:04.787Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:08:04.793Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T16:08:04.794Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:08:04.794Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS INSERT::::","timestamp":"2016-08-30T16:10:21.524Z"}
+{"level":"debug","message":":::EXECUTE INSERT USER QUERY::::","timestamp":"2016-08-30T16:10:21.526Z"}
+{"level":"debug","message":":::FINAL BUSINESS INSERT::::","timestamp":"2016-08-30T16:10:21.527Z"}
+{"message":"notNull Violation: lastname cannot be null","name":"SequelizeValidationError","stack":"SequelizeValidationError: notNull Violation: lastname cannot be null\n    at C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\lib\\instance-validator.js:74:14\n    at bound (domain.js:287:14)\n    at runBound (domain.js:300:12)\n    at tryCatcher (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:509:31)\n    at Promise._settlePromise (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:566:18)\n    at Promise._settlePromise0 (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:611:10)\n    at Promise._settlePromises (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:690:18)\n    at Promise._fulfill (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:635:18)\n    at PromiseArray._resolve (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:125:19)\n    at PromiseArray._promiseFulfilled (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise_array.js:143:14)\n    at Promise._settlePromise (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:571:26)\n    at Promise._settlePromise0 (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:611:10)\n    at Promise._settlePromises (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:690:18)\n    at Async._drainQueue (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:138:16)\n    at Async._drainQueues (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:148:10)","errors":[{"message":"lastname cannot be null","type":"notNull Violation","path":"lastname","value":null}],"level":"debug","timestamp":"2016-08-30T16:10:21.544Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-30T16:10:21.547Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-30T16:10:21.547Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T16:10:21.551Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS INSERT::::","timestamp":"2016-08-30T16:10:40.197Z"}
+{"level":"debug","message":":::EXECUTE INSERT USER QUERY::::","timestamp":"2016-08-30T16:10:40.197Z"}
+{"level":"debug","message":":::FINAL BUSINESS INSERT::::","timestamp":"2016-08-30T16:10:40.198Z"}
+{"message":"Validation error","name":"SequelizeUniqueConstraintError","stack":"SequelizeUniqueConstraintError: Validation error\n    at Query.formatError (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:149:14)\n    at Query.<anonymous> (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:49:21)\n    at bound (domain.js:287:14)\n    at Query.runBound [as _callback] (domain.js:300:12)\n    at Query.Sequence.end (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:85:24)\n    at Query.ErrorPacket (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:94:8)\n    at Protocol._parsePacket (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Protocol.js:280:23)\n    at Parser.write (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Parser.js:74:12)\n    at Protocol.write (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\Connection.js:109:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:153:18)\n    at Socket.Readable.push (_stream_readable.js:111:10)\n    at TCP.onread (net.js:536:20)","errors":[{"message":"email_UNIQUE must be unique","type":"unique violation","path":"email_UNIQUE","value":"hhugohm@icloud.com"}],"fields":{"email_UNIQUE":"hhugohm@icloud.com"},"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 16:10:40','2016-08-30 16:10:40',1);"},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 16:10:40','2016-08-30 16:10:40',1);"},"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 16:10:40','2016-08-30 16:10:40',1);","level":"debug","timestamp":"2016-08-30T16:10:40.669Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-30T16:10:40.671Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-30T16:10:40.672Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T16:10:40.673Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS INSERT::::","timestamp":"2016-08-30T16:13:41.726Z"}
+{"level":"debug","message":":::EXECUTE INSERT USER QUERY::::","timestamp":"2016-08-30T16:13:41.727Z"}
+{"level":"debug","message":":::FINAL BUSINESS INSERT::::","timestamp":"2016-08-30T16:13:41.727Z"}
+{"message":"Validation error","name":"SequelizeUniqueConstraintError","stack":"SequelizeUniqueConstraintError: Validation error\n    at Query.formatError (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:149:14)\n    at Query.<anonymous> (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:49:21)\n    at bound (domain.js:287:14)\n    at Query.runBound [as _callback] (domain.js:300:12)\n    at Query.Sequence.end (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:85:24)\n    at Query.ErrorPacket (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:94:8)\n    at Protocol._parsePacket (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Protocol.js:280:23)\n    at Parser.write (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Parser.js:74:12)\n    at Protocol.write (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\Connection.js:109:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:153:18)\n    at Socket.Readable.push (_stream_readable.js:111:10)\n    at TCP.onread (net.js:536:20)","errors":[{"message":"email_UNIQUE must be unique","type":"unique violation","path":"email_UNIQUE","value":"hhugohm@icloud.com"}],"fields":{"email_UNIQUE":"hhugohm@icloud.com"},"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 16:13:41','2016-08-30 16:13:41',1);"},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 16:13:41','2016-08-30 16:13:41',1);"},"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 16:13:41','2016-08-30 16:13:41',1);","level":"debug","timestamp":"2016-08-30T16:13:41.883Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-30T16:13:41.886Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-30T16:13:41.886Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T16:13:41.886Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:13:47.405Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:13:47.406Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:13:47.416Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:13:47.417Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:13:47.418Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:13:47.418Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:16:37.925Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:16:37.928Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:16:37.949Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:16:37.950Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:16:37.950Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:16:37.950Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:16:57.634Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:16:57.636Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:16:57.652Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:16:57.653Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:16:57.653Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:16:57.653Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:28:45.309Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:28:45.311Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:28:45.328Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:28:45.329Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:28:45.329Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:28:45.330Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:28:52.103Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:28:52.103Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:28:52.108Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:28:52.109Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:28:52.110Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:28:52.110Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:28:58.298Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:28:58.298Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:28:58.303Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:28:58.304Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:28:58.304Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:28:58.305Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:30:51.769Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:30:51.771Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:30:51.788Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:30:51.788Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:30:51.789Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:30:51.789Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:34:09.326Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:34:09.328Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:09.345Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:34:09.346Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:09.347Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:34:09.347Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:34:12.658Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:34:12.658Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:12.662Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:34:12.663Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:12.663Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:34:12.664Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:34:17.266Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:34:17.267Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:17.272Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:34:17.273Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:17.274Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:34:17.274Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:34:21.008Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:34:21.009Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:21.013Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:34:21.015Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:21.016Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:34:21.017Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:34:24.153Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:34:24.154Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:24.158Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:34:24.159Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:24.161Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:34:24.162Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:34:27.057Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:34:27.058Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:27.062Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:34:27.062Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:34:27.062Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:34:27.062Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T16:55:56.515Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T16:55:56.517Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:55:56.539Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T16:55:56.540Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T16:55:56.540Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T16:55:56.540Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T17:02:45.317Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T17:02:45.318Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T17:02:45.324Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T17:02:45.324Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T17:02:45.324Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:02:45.325Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:02:51.747Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:02:51.747Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:02:51.748Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:02:51.749Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:02:51.819Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:03:59.623Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:03:59.625Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:03:59.626Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:03:59.626Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:03:59.682Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS DELETE  USER BY ID::::","timestamp":"2016-08-30T17:04:11.378Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T17:04:11.378Z"}
+{"level":"debug","message":":::RESULTADO::::0","timestamp":"2016-08-30T17:04:11.383Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T17:04:11.384Z"}
+{"level":"debug","message":":::SUCCES::::[object Object]","timestamp":"2016-08-30T17:04:11.384Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:04:11.385Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-30T17:04:23.578Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-30T17:04:23.578Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-30T17:04:23.579Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T17:04:23.592Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T17:04:23.592Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T17:04:23.593Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:04:23.593Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-30T17:04:26.657Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-30T17:04:26.658Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-30T17:04:26.664Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T17:04:26.664Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-30T17:04:26.664Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:04:26.665Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS INSERT::::","timestamp":"2016-08-30T17:05:00.207Z"}
+{"level":"debug","message":":::EXECUTE INSERT USER QUERY::::","timestamp":"2016-08-30T17:05:00.209Z"}
+{"level":"debug","message":":::FINAL BUSINESS INSERT::::","timestamp":"2016-08-30T17:05:00.210Z"}
+{"message":"Validation error","name":"SequelizeUniqueConstraintError","stack":"SequelizeUniqueConstraintError: Validation error\n    at Query.formatError (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:149:14)\n    at Query.<anonymous> (C:\\node-js\\neossoftware_back\\node_modules\\sequelize\\lib\\dialects\\mysql\\query.js:49:21)\n    at bound (domain.js:287:14)\n    at Query.runBound [as _callback] (domain.js:300:12)\n    at Query.Sequence.end (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:85:24)\n    at Query.ErrorPacket (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:94:8)\n    at Protocol._parsePacket (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Protocol.js:280:23)\n    at Parser.write (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Parser.js:74:12)\n    at Protocol.write (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (C:\\node-js\\neossoftware_back\\node_modules\\mysql\\lib\\Connection.js:109:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:153:18)\n    at Socket.Readable.push (_stream_readable.js:111:10)\n    at TCP.onread (net.js:536:20)","errors":[{"message":"email_UNIQUE must be unique","type":"unique violation","path":"email_UNIQUE","value":"hhugohm@icloud.com"}],"fields":{"email_UNIQUE":"hhugohm@icloud.com"},"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 17:05:00','2016-08-30 17:05:00',1);"},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 17:05:00','2016-08-30 17:05:00',1);"},"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-30 17:05:00','2016-08-30 17:05:00',1);","level":"debug","timestamp":"2016-08-30T17:05:00.276Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-30T17:05:00.277Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-30T17:05:00.278Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T17:05:00.278Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-30T17:05:04.730Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-30T17:05:04.731Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-30T17:05:04.731Z"}
+{"level":"debug","message":"FECHA:::::::::::30/05/2016 12:08.04","timestamp":"2016-08-30T17:05:04.733Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-30T17:05:04.742Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-30T17:05:04.743Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:05:04.743Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:07:08.712Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:07:08.712Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:07:08.713Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:07:08.713Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:07:08.806Z"}
+{"level":"debug","message":":::NAME::::undefined","timestamp":"2016-08-30T17:07:12.469Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:07:12.469Z"}
+{"level":"debug","message":":::NO DATA USER::::","timestamp":"2016-08-30T17:07:12.470Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-30T17:07:12.470Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:07:22.000Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:07:22.000Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:07:22.000Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:07:22.001Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:07:22.038Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:39:46.795Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:39:46.797Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:39:46.797Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:39:46.797Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:39:46.868Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:45:05.189Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:45:05.191Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:45:05.191Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:45:05.192Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:45:05.248Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:45:48.438Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:45:48.438Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:45:48.439Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:45:48.439Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:45:48.520Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:46:02.926Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:46:02.927Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:46:02.927Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:46:02.927Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:46:03.031Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:46:57.128Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:46:57.129Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:46:57.129Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:46:57.129Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:46:57.235Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:49:49.308Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:49:49.308Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:49:49.308Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:49:49.309Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:49:49.384Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:50:09.181Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:50:09.182Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:50:09.182Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:50:09.182Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:50:09.216Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:51:32.965Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:51:32.967Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:51:32.967Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:51:32.968Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:51:33.022Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:52:35.786Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:52:35.788Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:52:35.788Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:52:35.789Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:52:35.896Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:55:48.846Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:55:48.848Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:55:48.848Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:55:48.849Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:55:48.953Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T17:56:16.314Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T17:56:16.316Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T17:56:16.316Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T17:56:16.317Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T17:56:16.419Z"}
+{"date":"Tue Aug 30 2016 13:02:16 GMT-0500 (Central Daylight Time (Mexico))","process":{"pid":48816,"uid":null,"gid":null,"cwd":"c:\\node-js\\neossoftware_back","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v4.4.7","argv":["C:\\Program Files\\nodejs\\node.exe","c:\\node-js\\neossoftware_back\\src\\api.js"],"memoryUsage":{"rss":66891776,"heapTotal":41396560,"heapUsed":36075864}},"os":{"loadavg":[0,0,0],"uptime":506672.3500423},"trace":[{"column":11,"file":"util.js","function":"Object.exports._errnoException","line":873,"method":"exports._errnoException","native":false},{"column":20,"file":"util.js","function":"exports._exceptionWithHostPort","line":896,"method":"_exceptionWithHostPort","native":false},{"column":14,"file":"net.js","function":"Server._listen2","line":1250,"method":"_listen2","native":false},{"column":10,"file":"net.js","function":"listen","line":1286,"method":null,"native":false},{"column":5,"file":"net.js","function":"Server.listen","line":1382,"method":"listen","native":false},{"column":32,"file":"c:\\node-js\\neossoftware_back\\node_modules\\restify\\lib\\server.js","function":"Server.listen","line":398,"method":"listen","native":false},{"column":12,"file":"c:\\node-js\\neossoftware_back\\src\\api.js","function":null,"line":99,"method":null,"native":false},{"column":24,"file":"c:\\node-js\\neossoftware_back\\src\\routes\\index.js","function":null,"line":36,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":27,"method":"files.done","native":false},{"column":37,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":null,"line":53,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":25,"method":"files.done","native":false},{"column":37,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":null,"line":53,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":25,"method":"files.done","native":false},{"column":33,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.getStatHandler","line":60,"method":"files.getStatHandler","native":false},{"column":15,"file":"fs.js","function":"FSReqWrap.oncomplete","line":82,"method":"oncomplete","native":false}],"stack":["Error: listen EADDRINUSE :::8085","    at Object.exports._errnoException (util.js:873:11)","    at exports._exceptionWithHostPort (util.js:896:20)","    at Server._listen2 (net.js:1250:14)","    at listen (net.js:1286:10)","    at Server.listen (net.js:1382:5)","    at Server.listen (c:\\node-js\\neossoftware_back\\node_modules\\restify\\lib\\server.js:398:32)","    at c:\\node-js\\neossoftware_back\\src\\api.js:99:12","    at c:\\node-js\\neossoftware_back\\src\\routes\\index.js:36:24","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:27:13)","    at c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:53:37","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:25:13)","    at c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:53:37","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:25:13)","    at exports.files.getStatHandler (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:60:33)","    at FSReqWrap.oncomplete (fs.js:82:15)"],"level":"error","message":"uncaughtException: listen EADDRINUSE :::8085","timestamp":"2016-08-30T18:02:16.853Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T18:02:34.069Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T18:02:34.070Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T18:02:34.070Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T18:02:34.070Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T18:02:34.173Z"}
+{"date":"Tue Aug 30 2016 13:03:01 GMT-0500 (Central Daylight Time (Mexico))","process":{"pid":99752,"uid":null,"gid":null,"cwd":"c:\\node-js\\neossoftware_back","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v4.4.7","argv":["C:\\Program Files\\nodejs\\node.exe","c:\\node-js\\neossoftware_back\\src\\api.js"],"memoryUsage":{"rss":98361344,"heapTotal":73369936,"heapUsed":36067784}},"os":{"loadavg":[0,0,0],"uptime":506717.016899},"trace":[{"column":11,"file":"util.js","function":"Object.exports._errnoException","line":873,"method":"exports._errnoException","native":false},{"column":20,"file":"util.js","function":"exports._exceptionWithHostPort","line":896,"method":"_exceptionWithHostPort","native":false},{"column":14,"file":"net.js","function":"Server._listen2","line":1250,"method":"_listen2","native":false},{"column":10,"file":"net.js","function":"listen","line":1286,"method":null,"native":false},{"column":5,"file":"net.js","function":"Server.listen","line":1382,"method":"listen","native":false},{"column":32,"file":"c:\\node-js\\neossoftware_back\\node_modules\\restify\\lib\\server.js","function":"Server.listen","line":398,"method":"listen","native":false},{"column":12,"file":"c:\\node-js\\neossoftware_back\\src\\api.js","function":null,"line":99,"method":null,"native":false},{"column":24,"file":"c:\\node-js\\neossoftware_back\\src\\routes\\index.js","function":null,"line":36,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":27,"method":"files.done","native":false},{"column":37,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":null,"line":53,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":25,"method":"files.done","native":false},{"column":37,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":null,"line":53,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":25,"method":"files.done","native":false},{"column":33,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.getStatHandler","line":60,"method":"files.getStatHandler","native":false},{"column":15,"file":"fs.js","function":"FSReqWrap.oncomplete","line":82,"method":"oncomplete","native":false}],"stack":["Error: listen EADDRINUSE :::8085","    at Object.exports._errnoException (util.js:873:11)","    at exports._exceptionWithHostPort (util.js:896:20)","    at Server._listen2 (net.js:1250:14)","    at listen (net.js:1286:10)","    at Server.listen (net.js:1382:5)","    at Server.listen (c:\\node-js\\neossoftware_back\\node_modules\\restify\\lib\\server.js:398:32)","    at c:\\node-js\\neossoftware_back\\src\\api.js:99:12","    at c:\\node-js\\neossoftware_back\\src\\routes\\index.js:36:24","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:27:13)","    at c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:53:37","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:25:13)","    at c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:53:37","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:25:13)","    at exports.files.getStatHandler (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:60:33)","    at FSReqWrap.oncomplete (fs.js:82:15)"],"level":"error","message":"uncaughtException: listen EADDRINUSE :::8085","timestamp":"2016-08-30T18:03:01.521Z"}
+{"date":"Tue Aug 30 2016 13:03:56 GMT-0500 (Central Daylight Time (Mexico))","process":{"pid":100924,"uid":null,"gid":null,"cwd":"c:\\node-js\\neossoftware_back","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v4.4.7","argv":["C:\\Program Files\\nodejs\\node.exe","c:\\node-js\\neossoftware_back\\src\\api.js"],"memoryUsage":{"rss":98357248,"heapTotal":73369936,"heapUsed":36067736}},"os":{"loadavg":[0,0,0],"uptime":506771.6332538},"trace":[{"column":11,"file":"util.js","function":"Object.exports._errnoException","line":873,"method":"exports._errnoException","native":false},{"column":20,"file":"util.js","function":"exports._exceptionWithHostPort","line":896,"method":"_exceptionWithHostPort","native":false},{"column":14,"file":"net.js","function":"Server._listen2","line":1250,"method":"_listen2","native":false},{"column":10,"file":"net.js","function":"listen","line":1286,"method":null,"native":false},{"column":5,"file":"net.js","function":"Server.listen","line":1382,"method":"listen","native":false},{"column":32,"file":"c:\\node-js\\neossoftware_back\\node_modules\\restify\\lib\\server.js","function":"Server.listen","line":398,"method":"listen","native":false},{"column":12,"file":"c:\\node-js\\neossoftware_back\\src\\api.js","function":null,"line":99,"method":null,"native":false},{"column":24,"file":"c:\\node-js\\neossoftware_back\\src\\routes\\index.js","function":null,"line":36,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":27,"method":"files.done","native":false},{"column":37,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":null,"line":53,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":25,"method":"files.done","native":false},{"column":37,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":null,"line":53,"method":null,"native":false},{"column":13,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.done","line":25,"method":"files.done","native":false},{"column":33,"file":"c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js","function":"exports.files.getStatHandler","line":60,"method":"files.getStatHandler","native":false},{"column":15,"file":"fs.js","function":"FSReqWrap.oncomplete","line":82,"method":"oncomplete","native":false}],"stack":["Error: listen EADDRINUSE :::8085","    at Object.exports._errnoException (util.js:873:11)","    at exports._exceptionWithHostPort (util.js:896:20)","    at Server._listen2 (net.js:1250:14)","    at listen (net.js:1286:10)","    at Server.listen (net.js:1382:5)","    at Server.listen (c:\\node-js\\neossoftware_back\\node_modules\\restify\\lib\\server.js:398:32)","    at c:\\node-js\\neossoftware_back\\src\\api.js:99:12","    at c:\\node-js\\neossoftware_back\\src\\routes\\index.js:36:24","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:27:13)","    at c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:53:37","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:25:13)","    at c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:53:37","    at exports.files.done (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:25:13)","    at exports.files.getStatHandler (c:\\node-js\\neossoftware_back\\node_modules\\node-dir\\lib\\paths.js:60:33)","    at FSReqWrap.oncomplete (fs.js:82:15)"],"level":"error","message":"uncaughtException: listen EADDRINUSE :::8085","timestamp":"2016-08-30T18:03:56.138Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T18:04:41.828Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T18:04:41.828Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T18:04:41.829Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T18:04:41.829Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T18:04:41.935Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T18:53:13.767Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T18:53:13.769Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T18:53:13.769Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T18:53:13.769Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T18:53:13.858Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T18:53:26.506Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T18:53:26.507Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T18:53:26.507Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T18:53:26.507Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T18:53:26.582Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-30T18:53:29.926Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-30T18:53:29.926Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-30T18:53:29.926Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-30T18:53:29.926Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-30T18:53:30.003Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-31T02:47:46.343Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-31T02:47:46.346Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-31T02:47:46.347Z"}
+{"level":"debug","message":"FECHA:::::::::::30/47/2016 21:08.46","timestamp":"2016-08-31T02:47:46.350Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-31T02:47:46.448Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-31T02:47:46.449Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-31T02:47:46.449Z"}
+{"level":"debug","message":":::NAME::::Hugo","timestamp":"2016-08-31T02:48:12.410Z"}
+{"level":"debug","message":":::LASTNAME::::undefined","timestamp":"2016-08-31T02:48:12.411Z"}
+{"level":"debug","message":":::ONLY NAME::::","timestamp":"2016-08-31T02:48:12.411Z"}
+{"level":"debug","message":":::EXECUTE UPDATE A QUERY NAME::::","timestamp":"2016-08-31T02:48:12.412Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-31T02:48:12.556Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS DELETE  USER BY ID::::","timestamp":"2016-08-31T02:48:35.079Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-31T02:48:35.080Z"}
+{"level":"debug","message":":::RESULTADO::::0","timestamp":"2016-08-31T02:48:35.091Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-31T02:48:35.091Z"}
+{"level":"debug","message":":::SUCCES::::[object Object]","timestamp":"2016-08-31T02:48:35.092Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-31T02:48:35.092Z"}
+{"level":"debug","message":"WEBSERVICE...28","timestamp":"2016-08-31T02:48:40.471Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET  USER BY ID::::","timestamp":"2016-08-31T02:48:40.471Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY USER BY ID::::28","timestamp":"2016-08-31T02:48:40.472Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-31T02:48:40.482Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-31T02:48:40.483Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-31T02:48:40.483Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET USER BY PASS::::","timestamp":"2016-08-31T02:48:52.223Z"}
+{"level":"debug","message":":::EXECUTE SELECT A QUERY::::","timestamp":"2016-08-31T02:48:52.223Z"}
+{"level":"debug","message":":::RESULTADO::::[object SequelizeInstance:user]","timestamp":"2016-08-31T02:48:52.232Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-31T02:48:52.233Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user]","timestamp":"2016-08-31T02:48:52.233Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-31T02:48:52.233Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS INSERT::::","timestamp":"2016-08-31T02:48:56.302Z"}
+{"level":"debug","message":":::EXECUTE INSERT USER QUERY::::","timestamp":"2016-08-31T02:48:56.302Z"}
+{"level":"debug","message":":::FINAL BUSINESS INSERT::::","timestamp":"2016-08-31T02:48:56.304Z"}
+{"message":"Validation error","name":"SequelizeUniqueConstraintError","stack":"SequelizeUniqueConstraintError: Validation error\n    at Query.formatError (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/sequelize/lib/dialects/mysql/query.js:149:14)\n    at Query.<anonymous> (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/sequelize/lib/dialects/mysql/query.js:49:21)\n    at bound (domain.js:287:14)\n    at Query.runBound [as _callback] (domain.js:300:12)\n    at Query.Sequence.end (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/mysql/lib/protocol/sequences/Sequence.js:85:24)\n    at Query.ErrorPacket (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/mysql/lib/protocol/sequences/Query.js:94:8)\n    at Protocol._parsePacket (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/mysql/lib/protocol/Protocol.js:280:23)\n    at Parser.write (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/mysql/lib/protocol/Parser.js:74:12)\n    at Protocol.write (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/mysql/lib/protocol/Protocol.js:39:16)\n    at Socket.<anonymous> (/home/camus/angular1/curso_mario/neossytem_project/neossoftware_back/node_modules/mysql/lib/Connection.js:109:28)\n    at emitOne (events.js:77:13)\n    at Socket.emit (events.js:169:7)\n    at readableAddChunk (_stream_readable.js:146:16)\n    at Socket.Readable.push (_stream_readable.js:110:10)\n    at TCP.onread (net.js:523:20)","errors":[{"message":"email_UNIQUE must be unique","type":"unique violation","path":"email_UNIQUE","value":"hhugohm@icloud.com"}],"fields":{"email_UNIQUE":"hhugohm@icloud.com"},"parent":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-31 02:48:56','2016-08-31 02:48:56',1);"},"original":{"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","index":0,"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-31 02:48:56','2016-08-31 02:48:56',1);"},"sql":"INSERT INTO `te_user` (`id_user`,`name`,`lastname`,`email`,`password`,`create_date`,`update_date`,`status`) VALUES (DEFAULT,'Hugo','Hidalgo','hhugohm@icloud.com','12345678','2016-08-31 02:48:56','2016-08-31 02:48:56',1);","level":"debug","timestamp":"2016-08-31T02:48:56.454Z"}
+{"level":"debug","message":":::ERROR::::[object Object]","timestamp":"2016-08-31T02:48:56.457Z"}
+{"level":"debug","message":":::SUCCES::::null","timestamp":"2016-08-31T02:48:56.457Z"}
+{"level":"debug","message":"ERROR EN EL SQL...","timestamp":"2016-08-31T02:48:56.457Z"}
+{"level":"debug","message":"ALLLL","timestamp":"2016-08-31T02:48:59.708Z"}
+{"level":"debug","message":":::EXECUTE BUSINESS GET ALL USER::::","timestamp":"2016-08-31T02:48:59.709Z"}
+{"level":"debug","message":":::EXECUTE SELECT ALL USERS QUERY::::","timestamp":"2016-08-31T02:48:59.709Z"}
+{"level":"debug","message":"FECHA:::::::::::30/48/2016 21:08.59","timestamp":"2016-08-31T02:48:59.710Z"}
+{"level":"debug","message":":::ERROR::::null","timestamp":"2016-08-31T02:48:59.722Z"}
+{"level":"debug","message":":::SUCCES::::[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user],[object SequelizeInstance:user]","timestamp":"2016-08-31T02:48:59.723Z"}
+{"level":"debug","message":"SUCCESS SQL...","timestamp":"2016-08-31T02:48:59.723Z"}
