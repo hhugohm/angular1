@@ -29,8 +29,9 @@ var sequelize = new Sequelize(
         }
 });
 
-server.use(restify.bodyParser({mapParams: false}));
+server.use(restify.bodyParser({mapParams: true}));//true recibe JSON - false recibe form
 server.use(restify.queryParser());
+server.use(restify.jsonp());
 server.use(restifyValidation.validationPlugin({errorHandler: restify.errors.InvalidArgumentError}));
 server.pre(restify.CORS({
   origins: ['*'],
@@ -49,7 +50,8 @@ server.on( "MethodNotAllowed", function( request, response )
         response.header( "Access-Control-Allow-Methods",     "GET, POST, PUT, DELETE, OPTIONS"       );
         response.header( "Access-Control-Allow-Origin",      request.headers.origin                  );
         response.header( "Access-Control-Max-Age",           0                                       );
-        response.header( "Content-type",                     "text/plain charset=UTF-8"              );
+      //  response.header( "Content-type",                     "text/plain charset=UTF-8"              );
+        response.header( "Content-type",                     "application/json"        );
         response.header( "Content-length",                   0                                       );
 
         response.send( 204 );
@@ -80,7 +82,8 @@ routes.generateRoutes(path.resolve(__dirname) + '/controllers/', function (err, 
                 version: '1.0.0'
             },
             basePath: '/api',
-            produces: ['application/json']
+            consumes :["application/json"],
+            produces: 'application/json'
         },
         apis: routes
     };
