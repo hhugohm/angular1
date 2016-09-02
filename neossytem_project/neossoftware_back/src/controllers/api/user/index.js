@@ -15,7 +15,7 @@ userEndpoint.create = function (req, res, next) {
             logger.debug('ERROR EN EL SQL...');
             res.send(400, err);
         } else {
-            logger.debug('SUCCESS SQL...')
+            logger.debug('SUCCESS SQL...');
             res.send(200, result);
         }
         return next();
@@ -29,7 +29,7 @@ userEndpoint.getUserById = function (req, res, next) {
             logger.debug('ERROR EN EL SQL...');
             res.send(400, err);
         } else {
-            logger.debug('SUCCESS SQL...')
+            logger.debug('SUCCESS SQL...');
             res.send(200, result);
         }
         return next();
@@ -63,7 +63,7 @@ userEndpoint.deleteUserById = function (req, res, next) {
             logger.debug('ERROR EN EL SQL...');
             res.send(400, err);
         } else {
-            logger.debug('SUCCESS SQL...')
+            logger.debug('SUCCESS SQL...');
             res.send(200, result);
         }
         return next();
@@ -81,7 +81,7 @@ userEndpoint.authenticateUser = function (req, res, next) {
             logger.debug('ERROR EN EL SQL...');
             res.send(400, err);
         } else {
-            logger.debug('SUCCESS SQL...')
+            logger.debug('SUCCESS SQL...');
             res.send(200, result);
         }
         return next();
@@ -95,7 +95,7 @@ userEndpoint.getAllUsers = function (req, res, next) {
             logger.debug('ERROR EN EL SQL...');
             res.send(400, err);
         } else {
-            logger.debug('SUCCESS SQL...')
+            logger.debug('SUCCESS SQL...');
             res.send(200, result);
         }
         return next();

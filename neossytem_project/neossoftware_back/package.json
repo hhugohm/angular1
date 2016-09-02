@@ -1,6 +1,6 @@
 {
-  "name": "bccertifications-rest",
-  "private": true,
+  "name": "neossoftware_back",
+  "private": false,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
