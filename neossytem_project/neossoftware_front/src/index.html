@@ -4,58 +4,116 @@
 	<meta  charset="utf-8">
 	<meta name="viewport" content="width=device-width,  initial-scale=1">
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/loading.css" rel="stylesheet" />
   <!-- jQuery library -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  /*forms*/
+
+    .form-group .help-block {
+    display: none;
+  }
+
+  .form-group .glyphicon-remove:before {
+      content: "";
+  }
+
+  .form-group.has-error .glyphicon-remove:before  {
+        content: "\e014";
+  }
+
+  .form-group.has-error .help-block {
+    display: block;
+  }
+
+
+
+
+</style>
+  <!--
   <style type="text/css">
       .validation{
         color: maroon;
       }
 
   </style>
+  -->
 </head>
 
-<body ng-controller="neosUserController">
+<body ng-controller="neosUserController" class="{{cssClass}}">
  <!-- < class="container-fluid"Alineado a la izquierda -->
 <!-- container = alineado al centro -->
 <div  class="container"><!-- Alineado a la izquierda -->
+
+<h3>Listado de usuarios </h3>
+<table class="table table-hover table-striped table-bordered table-responsive">
+    <thead>
+        <tr  bgcolor="#A4A4A4">
+            <th style="width: 5%"><font color="white">Id</font></th>
+            <th class="col-md-2"><font color="white">Nombre</font></th>
+            <th class="col-md-2"><font color="white">Apellido</font></th>
+            <th class="col-md-2"><font color="white">Email</font></th>
+            <th class="col-md-2"><font color="white">Password</font></th>
+            <th class="col-md-2"><font color="white">Fecha Alta</font></th>
+            <th class="col-md-3"><font color="white">Fecha Mod</font></th>
+            <th class="col-md-2"><font color="white">Status</font></th>
+            <th class="col-md-2"><font color="white">Action</font></th>
+        </tr>
+    </thead>
+    <tbody>
+          <tr ng-repeat="user in users">
+            <td>{{user.iduser}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.lastname}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.createDate}}</td>
+            <td>{{user.updateDate}}</td>
+            <td>{{user.status==1 ? "ACTIVO" : "INACTIVO"}}</td>
+            <td><button type="button" class="btn btn-link"  ng-click='deleUser(user.iduser)' >Delete</button></td>
+          </tr>
+    </tbody>
+</table>
+<p></p>
+
 	<h3>Alta de usuarios </h3>
     <p></p>
-<div class="row">
-<form class="form-horizontal"  name="formUser" novalidate>
-  <div class="form-group">
+<div class="row"><!--ng-click="addItem()"  -->
+<form class="form-horizontal"  name="formUser" id="formUser" novalidate rc-submit="addItem()">
+  <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.name)}">
       <label class="control-label col-xs-2">Nombre:</label>
       <div class="col-xs-6">
-          <input ng-model="dataUser.name" type="text" class="form-control"   id="name" name="name" placeholder="Nombre" required>
-          <div  ng-messages="formUser.name.$error" class="validation">
-              <div ng-message="required">El nombre es reqierido</div>
+          <input type="text" ng-model="dataUser.name" type="text" class="form-control input-md"   id="name" name="name" placeholder="Nombre" required>
+          <div  class="help-block" ng-messages="formUser.name.$error" >
+                <div ng-message="required">El nombre de usuario es requerido</div>
           </div>
       </div>
   </div>
-  <div class="form-group">
+  <div class="form-group"  ng-class="{'has-error': rc.formUser.needsAttention(formUser.lastName)}">
       <label class="control-label col-xs-2">Apellido:</label>
       <div class="col-xs-6">
-          <input ng-model="dataUser.lastName" type="text" class="form-control"  id="lastName" name="lastName"  placeholder="Apellido" required>
-          <div  ng-messages="formUser.lastName.$error" class="validation">
+          <input ng-model="dataUser.lastName" type="text" class="form-control input-md"  id="lastName" name="lastName"  placeholder="Apellido" required>
+          <div  class="help-block" ng-messages="formUser.lastName.$error" >
               <div ng-message="required">El apellido es reqierido</div>
           </div>
       </div>
   </div>
-    <div class="form-group">
+    <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.email)}">
         <label class="control-label col-xs-2">Email:</label>
         <div class="col-xs-4">
-            <input  ng-model="dataUser.email" type="text" class="form-control"  id="email" name="email" placeholder="Email" required>
-            <div  ng-messages="formUser.email.$error" class="validation">
+            <input  ng-model="dataUser.email" type="text" class="form-control input-md"  id="email" name="email" placeholder="Email" required>
+            <div  class="help-block" ng-messages="formUser.email.$error" >
                 <div ng-message="required">El email es reqierido</div>
             </div>
         </div>
     </div>
-    <div class="form-group">
+    <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.password)}">
         <label class="control-label col-xs-2">Password:</label>
         <div class="col-xs-4">
-            <input ng-model="dataUser.password" type="text" class="form-control" id="password" name="password" placeholder="Password" required>
-            <div  ng-messages="formUser.password.$error" class="validation">
+            <input ng-model="dataUser.password" type="text" class="form-control input-md" id="password" name="password" placeholder="Password" required>
+            <div  class="help-block" ng-messages="formUser.password.$error" >
                 <div ng-message="required">El password es reqierido</div>
             </div>
         </div>
@@ -63,7 +121,7 @@
     <div class="form-group">
         <div class="col-xs-offset-2 col-xs-9">
             <label class="checkbox-inline">
-                <input type="checkbox" value="agree">  Accepto <a href="#"  data-toggle="modal" data-target="#myModal">Terminos y condiciones</a>.
+                <input type="checkbox">Accepto <a href="#"  data-toggle="modal" data-target="#myModal">Terminos y condiciones</a>.
             </label>
         </div>
     </div>
@@ -96,48 +154,32 @@
           <!--
             <input type="submit" class="btn btn-primary" value="Enviar">
           -->
-            <button ng-click="addItem()" id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
+            <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
+            <!--
             <input type="reset" class="btn btn-default" value="Limpiar">
-						  <button ng-click="cambiarItem()" id="cambiarButton" name="cambiarButton" class="btn btn-primary">Cambiar</button>
+            -->
         </div>
     </div>
 </form>
 </div>
 
-<p></p>
-<h3>Listado de usuarios </h3>
-<table class="table table-hover table-striped table-bordered table-responsive">
-    <thead>
-        <tr  bgcolor="#A4A4A4">
-            <th style="width: 5%"><font color="white">Id</font></th>
-            <th class="col-md-2"><font color="white">Nombre</font></th>
-            <th class="col-md-2"><font color="white">Apellido</font></th>
-            <th class="col-md-2"><font color="white">Email</font></th>
-            <th class="col-md-2"><font color="white">Password</font></th>
-            <th class="col-md-2"><font color="white">Fecha Alta</font></th>
-            <th class="col-md-3"><font color="white">Fecha Mod</font></th>
-            <th class="col-md-2"><font color="white">Status</font></th>
-        </tr>
-    </thead>
-    <tbody>
-          <tr ng-repeat="user in users">
-            <td>{{user.iduser}}</td>
-            <td>{{user.name}}</td>
-            <td>{{user.lastname}}</td>
-            <td>{{user.email}}</td>
-            <td>{{user.password}}</td>
-            <td>{{user.createDate}}</td>
-            <td>{{user.updateDate}}</td>
-            <td>{{user.status==1 ? "ACTIVO" : "INACTIVO"}}</td>
-          </tr>
-    </tbody>
-</table>
+
 </div>
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="directives/validation.directive.js"></script>
+<script src="directives/common.directive.js"></script>
+<script src="app/modules.js"></script>
+<script src="app/constants.js"></script>
+<script src="app/services/neos.services.js"></script>
+<script src="app/controllers/neosUserController.js"></script>
 
+<!--
 <script src="index.js"></script>
+
+-->
+<loading></loading> <!-- directive loading inside controller -->
 
 </body>
 </html>

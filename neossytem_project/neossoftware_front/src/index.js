@@ -21,18 +21,16 @@ $scope.cambiarItem=function(){
 $scope.dataUser.name="MI VALOR2";
 
 }
-
-  $scope.addItem=function(){
+$scope.addItem=function(){
     alert('SE VAN A GURDAR LOS ELEMENTOS');
     $http({
-                    method : 'POST',
-                    url : 'http://localhost:8085/api/user',
-                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-                    data:  $.param($scope.dataUser)
-                    //data: {name: $scope.formUser.name, lastName: $scope.formUser.lastName,email:$scope.formUser.email,password:$scope.formUser.password}
-                }).then( _success, _error );
-            };
-//  }	headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            method : 'POST',
+            url : 'http://localhost:8085/api/user',
+            headers: {'Content-Type': 'application/json'},
+            data:  angular.toJson($scope.dataUser)
+        }).then( _success, _error );
+};
+
 
   function _success(response) {
     $scope.formUser.name ='';
@@ -63,4 +61,9 @@ $scope.dataUser.name="MI VALOR2";
         depth: 98,
         time: 62
     }];
+
+    $scope.sort = function(keyname){
+		$scope.sortKey = keyname;   //set the sortKey to the param passed
+		$scope.reverse = !$scope.reverse; //if true make it false and vice versa
+	}
 }
