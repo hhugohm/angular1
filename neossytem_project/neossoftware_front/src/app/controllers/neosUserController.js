@@ -3,7 +3,7 @@
  angular.module('neosApplication').controller('neosUserController', NeosUserController);
 function NeosUserController($scope,userApi,$timeout) {
   $scope.users = [];
- 
+
   getUsersData();
 
   function getUsersData() {
@@ -19,20 +19,23 @@ function NeosUserController($scope,userApi,$timeout) {
                     $scope.loading = false;
             })
              .error(function(data){
+                    $scope.loading = false;
                     console.log(data);
       });
   };
 
 
-$scope.addItem=function(){
+$scope.addItem=function(rc){
+
    // alert('SE VAN A GURDAR LOS ELEMENTOS');
     userApi.createUser($scope.dataUser)
            .success(function(data){
                 console.log(data);
-                cleanUserForm();
+                cleanUserForm(rc);
                 getUsersData();
       })
             .error(function(data){
+                cleanUserForm(rc);
                 console.log(data);
       });
 };
@@ -49,11 +52,9 @@ $scope.deleUser =function (idUser) {
   };
 
 
-  function cleanUserForm() {
-    $scope.dataUser.name ='';
-    $scope.dataUser.lastName ='';
-    $scope.dataUser.email ='';
-    $scope.dataUser.password ='';
+  function cleanUserForm(rc) {
+    $scope.dataUser={};
+    rc.restartvalidation();
     }
 
     /*
@@ -68,7 +69,7 @@ $scope.addItem=function(){
 };
 */
 
-   
+
 };
 
 })();

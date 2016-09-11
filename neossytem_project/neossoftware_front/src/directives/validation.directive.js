@@ -60,6 +60,12 @@
                         this.attempted = true;
                     };
 
+                    this.restartvalidation = function() {
+                      this.attempted = false;
+                      formController.$setPristine();
+                      formController.$setUntouched();
+                    }
+
                     this.setFormController = function(controller) {
                         formController = controller;
                     };

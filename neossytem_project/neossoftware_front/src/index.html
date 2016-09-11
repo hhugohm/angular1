@@ -81,7 +81,7 @@
 	<h3>Alta de usuarios </h3>
     <p></p>
 <div class="row"><!--ng-click="addItem()"  -->
-<form class="form-horizontal"  name="formUser" id="formUser" novalidate rc-submit="addItem()">
+<form class="form-horizontal"  name="formUser" id="formUser" novalidate rc-submit="addItem(rc.formUser)">
   <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.name)}">
       <label class="control-label col-xs-2">Nombre:</label>
       <div class="col-xs-6">
