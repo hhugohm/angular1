@@ -1,0 +1,21 @@
+<h1>Mi cambio 2</h1>
+<div class="row">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Site</th>
+                <th>Location</th>
+                <th>Depth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="dive in dives">
+                <td>{{dive.site}}</td>
+                <td>{{dive.location}}</td>
+                <td>{{dive.depth}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" ng-click="agregar()">Nuevo</button>
+</div>

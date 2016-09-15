@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html ng-app="diveLog">
+
+<head>
+    <title>Dive Log (ng-controller)</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="css/loading.css" rel="stylesheet" />
+    <!-- jQuery library -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+  /*forms*/
+
+
+    .form-group .help-block {
+    display: none;
+  }
+
+
+
+
+  .form-group .glyphicon-remove:before {
+      content: "";
+  }
+
+
+  .form-group.has-error .glyphicon-remove:before  {
+        content: "\e014";
+  }
+
+  .form-group.has-error .help-block {
+    display: block;
+  }
+
+
+
+
+</style>
+
+</head>
+
+<body ng-controller="diveLogCtrl" class="{{cssClass}}">
+    <div class="container-fluid">
+        <h1>My Latest Dives (ng-contoller)</h1>
+        <div class="row" ng-show="showInfo">
+            <!--
+      <div class="col-sm-4"
+        ng-repeat="dive in dives">
+        <h3>{{dive.site}}</h3>
+        <h4>{{dive.location}}</h4>
+        <h2>{{dive.depth}} feet | {{dive.time}} min</h2>
+      </div>
+    -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Site</th>
+                        <th>Location</th>
+                        <th>Depth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="dive in dives">
+                        <td>{{dive.site}}</td>
+                        <td>{{dive.location}}</td>
+                        <td>{{dive.depth}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" ng-click="agregar()">Nuevo</button>
+        </div>
+
+        <div class="row" ng-show="showForm">
+            <form class="form-horizontal" name="formLocation" id="formLocation" novalidate rc-submit="addItem()">
+              <h2>Form Name</h2>
+                    <!-- Form Name -->
+                    <!-- Search input-->
+                    <div class="form-group" ng-class="{'has-error': rc.formLocation.needsAttention(formLocation.location)}">
+                        <label class="col-md-4 control-label" for="searchinput">Location</label>
+                        <div class="col-md-4">
+                            <input ng-model="zone.location"  ng-maxlength="10" ng-pattern="onlyNumbers"  id="location" name="location" type="search" placeholder="" class="form-control input-md" required>
+                            <div  class="help-block" ng-messages="formLocation.location.$error" >
+                                <div ng-message="required">Location is required</div>
+                                <div ng-message="maxlength">Location should be less 10 characters</div>
+                                <div ng-message="pattern">Invalid characteres (only numbers)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search input-->
+                    <div class="form-group" ng-class="{'has-error': rc.formLocation.needsAttention(formLocation.site)}">
+                        <label class="col-md-4 control-label" for="searchinput">Site</label>
+                        <div class="col-md-4">
+                            <input ng-model="zone.site"  id="site" name="site" type="site" placeholder="" class="form-control input-md" required>
+                            <div  class="help-block" ng-messages="formLocation.site.$error" >
+                                <div ng-message="required">Site is required</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Text input-->
+                    <div class="form-group" ng-class="{'has-error': rc.formLocation.needsAttention(formLocation.depth)}">
+                        <label class="col-md-4 control-label" for="textinp">Depth</label>
+                        <div class="col-md-4">
+                            <input ng-model="zone.depth" id="depth" name="depth" type="text" placeholder="" class="form-control input-md" required>
+                            <div  class="help-block" ng-messages="formLocation.depth.$error" >
+                                <div ng-message="required">Depth is required</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <div class="col-md-4">
+                            <button id="singlebutton"  type="submit" name="singlebutton" class="btn btn-primary">Guardar</button>
+                        </div>
+                        <!-- ng-disabled="formLocation.$invalid" -->
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="directives/validation.directive.js"></script>
+    <script src="directives/common.directive.js"></script>
+    <script src="app/modules.js"></script>
+    <script src="app/constants.js"></script>
+    <script src="app/services/divelog.services.js"></script>
+    <script src="app/controllers/divelog.controller.js"></script>
+
+
+	 <loading></loading> <!-- directive loading inside controller -->
+</body>
+
+</html>
