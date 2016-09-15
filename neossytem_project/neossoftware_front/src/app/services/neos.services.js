@@ -17,15 +17,34 @@ service.createUser=function (dataUser) {
 		            return $http.post(url,data,config);
 		        }; 
 
+service.updateUser=function (dataUser) {
+	console.log("FORM : "+ dataUser);
+					var data = angular.toJson(dataUser);
+					console.log("JSON : "+dataUser.iduser);
+					
+					var url = apiURL + '/user/'+dataUser.iduser;
+					console.log('URL: ' + url);
+                    var config = {
+                                headers : {
+                                             'Content-Type': 'application/json'
+                                         }
+                                }
+		            return $http.put(url,data,config);
+		        }; 
+
 service.deleUser=function (idUser) {
 		            var url = apiURL + '/user/'+idUser ;
 		            return $http.delete(url);
 		        }; 
                 
-service.getUser=function () {
+service.getAllUser=function () {
 		            var url = apiURL + '/user';
 		            return $http.get(url);
-		        };            
+		        };    
+service.getUser=function (idUser) {
+		            var url = apiURL + '/user/'+idUser ;
+		            return $http.get(url);
+		        };                  
             
 
   /*var service = {
