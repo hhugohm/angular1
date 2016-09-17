@@ -1,0 +1,36 @@
+
+  /*loading effect*/
+
+  /* When the body has the loading class, we turn
+     the scrollbar off with overflow:hidden */
+  body.loading {
+  	overflow: hidden;
+  }
+
+  /* Anytime the body has the loading class, our
+     modal element will be visible */
+  body.loading .ajaxloading {
+  	display: block;
+  }
+
+  .ajaxloading {
+  	background-color: transparent;
+  	text-align: center;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	z-index: 1000;
+  	display: none;
+  	margin-top: 0%;
+  	/*background:#000;*/
+  	/* background:*/
+  	/*padding-top:45px;*/
+  	background: #fff url(image/ajax_image.gif) no-repeat 50% 50%;
+  	opacity: .60; /* standard: ff gt 1.5, opera, safari */
+  	-ms-filter: "alpha(opacity=60)"; /* ie 8 */
+  	filter: alpha(opacity = 60); /* ie lt 7 */
+  	-khtml-opacity: .60; /* safari 1.x */
+  	-moz-opacity: .60; /* ff lt 1.5, netscape */
+  }

@@ -1,6 +1,7 @@
 'use strict';
 
 var models = require('../../../models');
+var helpers = require('../../../helpers/tools.js');
 var userBusiness = require('../../../business/user');
 var logger = require('../../../helpers/logger');
 
@@ -9,7 +10,7 @@ var userEndpoint = {};
 
 userEndpoint.create = function (req, res, next) {
     //var jsonBody = JSON.parse(req.body);
-
+ helpers.sleep(500);
     userBusiness.createUserBusieness(req.body, function (err, result) {
         if (err) {
             logger.debug('ERROR EN EL SQL...');
@@ -23,7 +24,8 @@ userEndpoint.create = function (req, res, next) {
 };
 
 userEndpoint.getUserById = function (req, res, next) {
-    logger.debug('WEBSERVICE...' + req.params.userId)
+    logger.debug('WEBSERVICE...' + req.params.userId);
+     helpers.sleep(500);
     userBusiness.getUserByIdBusiness(req.params, function (err, result) {
         if (err) {
             logger.debug('ERROR EN EL SQL...');
@@ -40,10 +42,11 @@ userEndpoint.updateUserById = function (req, res, next) {
     //var jsonBody = JSON.parse(req.body);
     console.log("id: " + req.params.userId);
     console.log("name: " + req.body.name);
+     helpers.sleep(500);
     var params = {
         userId: req.params.userId,
         name: req.body.name,
-        lastName: req.body.lastName
+        lastName: req.body.lastname
     };
     userBusiness.updateUserByIdBusiness(params, function (err, result) {
         if (err) {
@@ -58,6 +61,7 @@ userEndpoint.updateUserById = function (req, res, next) {
 };
 
 userEndpoint.deleteUserById = function (req, res, next) {
+     helpers.sleep(500);
     userBusiness.deleteUserByIdBusiness(req.params, function (err, result) {
         if (err) {
             logger.debug('ERROR EN EL SQL...');
@@ -72,6 +76,7 @@ userEndpoint.deleteUserById = function (req, res, next) {
 
 userEndpoint.authenticateUser = function (req, res, next) {
     console.log(req.body);
+     helpers.sleep(500);
     //var jsonBody = JSON.parse(req.body);
     //var jsonBody = JSON.parse(payload).Body;
     console.log("name: " + req.body.email);
@@ -90,6 +95,7 @@ userEndpoint.authenticateUser = function (req, res, next) {
 
 userEndpoint.getAllUsers = function (req, res, next) {
     logger.debug('ALLLL');
+    helpers.sleep(500);
     userBusiness.getAllUsersBusiness(req.params, function (err, result) {
         if (err) {
             logger.debug('ERROR EN EL SQL...');
@@ -101,6 +107,8 @@ userEndpoint.getAllUsers = function (req, res, next) {
         return next();
     });
 };
+
+
 
 userEndpoint.routes = [
     {

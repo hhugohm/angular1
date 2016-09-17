@@ -3,25 +3,88 @@
  angular.module('neosApplication').controller('neosUserController', NeosUserController);
 function NeosUserController($scope,userApi,$timeout) {
   $scope.users = [];
-
+  $scope.modUser ={};
+  $scope.showFormUser = false;
+  $scope.howModFormUser = false;
   getUsersData();
 
+$scope.agregarUser = function() {
+         $scope.showFormUser = true;
+        $scope.showInfoUser = false;
+    }
+
+$scope.showOnlyUsers = function() {
+        $scope.showFormUser = true;
+        $scope.showInfoUser = false;
+    }
+ function showUsers(){
+    $scope.showInfoUser = true;
+    $scope.showFormUser = false;
+    $scope.howModFormUser = false;
+ }
+
+
+
   function getUsersData() {
+
        $scope.loading =true;
-       //var promise=20000000;
-       userApi.getUser()
+        userApi.getAllUser()
               .success(function(data){
                     console.log(data);
-                      promise = $timeout(function() {
-    //ajax call goes here..
-    },2000);
                     $scope.users=data;
                     $scope.loading = false;
+                    showUsers();
             })
              .error(function(data){
                     $scope.loading = false;
                     console.log(data);
       });
+
+/*
+       $timeout( userApi.getUser()
+              .success(function(data){
+                    console.log(data);
+
+                    $scope.users=data;
+
+                    $scope.loading = false;
+            })
+             .error(function(data){
+                    console.log(data);
+      }), 30000);*/
+      /* var timeoutPromise='';
+
+        if (timeoutPromise) {
+            $timeout.cancel(timeoutPromise);
+        }
+
+
+        timeoutPromise = $timeout(userApi.getUser()
+              .success(function(data){
+                    console.log(data);
+
+                    $scope.users=data;
+                    $scope.loading = false;
+            })
+             .error(function(data){
+                    console.log(data);
+      }),200000).finally(function(){
+                    timeoutPromise = null; //nullify it
+            });*/
+
+
+
+       /*
+       userApi.getUser()
+              .success(function(data){
+                    console.log(data);
+
+                    $scope.users=data;
+                    $scope.loading = false;
+            })
+             .error(function(data){
+                    console.log(data);
+      });*/
   };
 
 
@@ -32,6 +95,18 @@ $scope.addItem=function(rc){
            .success(function(data){
                 console.log(data);
                 cleanUserForm(rc);
+                getUsersData();
+                showUsers();
+      })
+            .error(function(data){
+                console.log(data);
+      });
+};
+$scope.updateItem=function(){
+    userApi.updateUser($scope.modUser)
+           .success(function(data){
+                console.log(data);
+                $scope.showModFormUser = false;
                 getUsersData();
       })
             .error(function(data){
@@ -45,6 +120,21 @@ $scope.deleUser =function (idUser) {
               .success(function(data){
                     console.log(data);
                     getUsersData();
+                    showUsers();
+            })
+             .error(function(data){
+                    console.log(data);
+      });
+  };
+
+  $scope.showModUser =function (idUser) {
+       userApi.getUser(idUser)
+              .success(function(data){
+                    console.log(data);
+                     $scope.modUser=data;
+                     $scope.showInfoUser = false;
+                     $scope.showModFormUser = true;
+                     console.log($scope.modUser.name);
             })
              .error(function(data){
                     console.log(data);
@@ -68,7 +158,6 @@ $scope.addItem=function(){
         }).then( _success, _error );
 };
 */
-
 
 };
 
