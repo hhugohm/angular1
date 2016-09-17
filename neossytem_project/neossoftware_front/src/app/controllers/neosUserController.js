@@ -13,9 +13,10 @@ $scope.agregarUser = function() {
         $scope.showInfoUser = false;
     }
 
-$scope.showOnlyUsers = function() {
-        $scope.showFormUser = true;
-        $scope.showInfoUser = false;
+$scope.showOnlyUsers = function(rc) {
+      cleanUserForm(rc);
+        $scope.showFormUser = false;
+        $scope.showInfoUser = true;
     }
  function showUsers(){
     $scope.showInfoUser = true;
