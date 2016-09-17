@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width,  initial-scale=1">
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+<link href="bower_components/angular-ui-grid/ui-grid.min.css" rel="stylesheet" />
+  
   <link href="css/loading.css" rel="stylesheet" />
   <!-- jQuery library -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -30,7 +32,10 @@
     display: block;
   }
 
-
+.myGrid{
+    width:1200px;
+    height:550px
+}
 
 
 </style>
@@ -53,6 +58,14 @@
 
 <h3>Listado de usuarios </h3>
 <br>
+
+<div  id="grid" ui-grid="gridOptions" class="myGrid">
+
+</div>
+<br>
+<button type="button" class="btn btn-success"  ng-click="agregarUser()">Agregar</button>
+
+<!--
 <table class="table table-hover table-striped table-bordered table-responsive">
     <thead>
         <tr  bgcolor="#A4A4A4">
@@ -82,7 +95,10 @@
     </tbody>
 </table>
 <button type="button" class="btn btn-success"  ng-click="agregarUser()">Agregar</button>
+
+-->
 </div>
+
 
 <div class="row"  ng-show="showFormUser"><!--ng-click="addItem()"  -->
 	<h3>Alta de usuarios </h3>
@@ -266,6 +282,7 @@
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
 <script src="directives/validation.directive.js"></script>
 <script src="directives/common.directive.js"></script>
 <script src="app/modules.js"></script>
