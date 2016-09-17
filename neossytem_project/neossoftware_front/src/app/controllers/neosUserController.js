@@ -2,6 +2,41 @@
 'use strict';
  angular.module('neosApplication').controller('neosUserController', NeosUserController);
 function NeosUserController($scope,userApi,$timeout) {
+$scope.gridOptions={
+    enableSorting: true,
+  enableCellEditOnFocus: true,
+  enableFiltering: true,
+    columnDefs:[
+        {
+            field:'iduser',displayName: 'ID',enableFiltering: false
+        } ,
+        {
+            field:'name',displayName: 'Nombre',enableFiltering: true
+        }  , {
+            field: 'lastname',displayName: 'Apellido',enableFiltering: false
+        }, {
+            field: 'email',displayName: 'Email',enableFiltering: false
+        }, {
+            field: 'password',displayName: 'Password',enableFiltering: false
+        }, {
+            field: 'createDate',displayName: 'Fecha creacion',enableFiltering: false
+        }, {
+            field: 'updateDate',displayName: 'Fecha Mod',enableFiltering: false
+        }, {
+            field: 'status',displayName: 'Estatus',enableFiltering: false
+        }, {
+           field: 'iduser', displayName: 'Borrar',enableFiltering: false, enableSorting: false,enableCellEdit: false ,cellTemplate: '<button type="button" class="btn btn-link"  ng-click="deleUser(iduser)" >Delete</button>'
+        }
+        
+
+    ]
+
+
+}
+
+
+
+
   $scope.users = [];
   $scope.modUser ={};
   $scope.showFormUser = false;
@@ -33,6 +68,7 @@ $scope.showOnlyUsers = function(rc) {
               .success(function(data){
                     console.log(data);
                     $scope.users=data;
+                    $scope.gridOptions.data=data;
                     $scope.loading = false;
                     showUsers();
             })
