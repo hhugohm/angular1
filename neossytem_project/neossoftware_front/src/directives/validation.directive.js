@@ -25,12 +25,12 @@
                         var ulElement = element.find('ul');
 
                         angular.forEach(errors, function(error, key) {
-                        	var errorDesc = '';
-                        	if (error.code != null) {
-                        		errorDesc = error.code + ' ' + error.description;
-                        	} else {
-                        		errorDesc = error.description;
-                        	}
+                            var errorDesc = '';
+                            if (error.code != null) {
+                                errorDesc = error.code + ' ' + error.description;
+                            } else {
+                                errorDesc = error.description;
+                            }
 
                             ulElement.append('<li>' + errorDesc + '</li>');
 
@@ -60,15 +60,35 @@
                         this.attempted = true;
                     };
 
-                    this.restartvalidation = function() {
-                      this.attempted = false;
-                      formController.$setPristine();
-                      formController.$setUntouched();
-                    }
-
                     this.setFormController = function(controller) {
                         formController = controller;
                     };
+
+                    this.restartvalidation = function() {
+                        this.attempted = false;
+                        formController.$setPristine();
+                        formController.$setUntouched();
+
+
+                        var formName = formController.$name;
+
+
+
+                        var errornamediv = "errCte" + "-" + formName;
+
+                        var idErrDiv = errornamediv;
+
+                        if (document.getElementById(errornamediv) != null) {
+
+
+                            document.getElementById(idErrDiv).style.display = "none";
+
+
+                        }
+
+
+
+                    }
 
                     this.needsAttention = function(fieldModelController) {
                         if (!formController) return false;
@@ -97,6 +117,20 @@
                             var submitController = controllers[0];
                             var formController = (controllers.length > 1) ? controllers[1] : null;
                             var fn = $parse(attributes.rcSubmit);
+                        var formName = formController.$name;
+                            scope.$watch(formName + '.$valid', function() {
+                              var errornamediv = "errCte" + "-" + formName;
+
+                              var idErrDiv = errornamediv;
+
+                              if (document.getElementById(errornamediv) != null) {
+
+
+                                  document.getElementById(idErrDiv).style.display = "none";
+
+
+                              }
+                            });
 
 
 
@@ -121,7 +155,7 @@
                                         form.prepend("<div class='form-group' id='" + errornamediv + "'  name='errCte'>  " +
                                             "<div class='col-sm-9'> " +
                                             "<div class='alert alert-danger' role='alert'>" +
-                                            "<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span> <span class='sr-only'>Error:</span> Ocurrieron errores de validaciÃ³n" +
+                                            "<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span> <span class='sr-only'>Error:</span> Ocurrieron errores de validación" +
                                             "</div>" +
                                             "</div> " +
                                             "</div>");
@@ -211,7 +245,7 @@
                                 form.prepend("<div class='form-group' id='" + errornamediv + "'> " +
                                     "<div class='col-sm-9'> " +
                                     "<div class='alert alert-danger' role='alert'>" +
-                                    "<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span> <span class='sr-only'>Error:</span> Ocurrieron errores de validaciï¿½n" +
+                                    "<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span> <span class='sr-only'>Error:</span> Ocurrieron errores de validación" +
                                     "</div>" +
                                     "</div> " +
                                     "</div>");
