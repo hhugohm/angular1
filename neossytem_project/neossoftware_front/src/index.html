@@ -1,71 +1,47 @@
 <!DOCTYPE html>
 <html ng-app="neosApplication">
+
 <head>
-	<meta  charset="utf-8">
-	<meta name="viewport" content="width=device-width,  initial-scale=1">
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-<link href="bower_components/angular-ui-grid/ui-grid.min.css" rel="stylesheet" />
-  
-  <link href="css/loading.css" rel="stylesheet" />
-  <!-- jQuery library -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-  <style type="text/css">
-  /*forms*/
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="bower_components/angular-ui-grid/ui-grid.min.css" rel="stylesheet" />
 
-    .form-group .help-block {
-    display: none;
-  }
+    <link href="css/loading.css" rel="stylesheet" />
+    <link href="css/error.form.css" rel="stylesheet" />
+    <link href="css/grid.ui.css" rel="stylesheet" />
+    <!-- jQuery library -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <style type="text/css">
+       
+      
+    </style>
 
-  .form-group .glyphicon-remove:before {
-      content: "";
-  }
-
-  .form-group.has-error .glyphicon-remove:before  {
-        content: "\e014";
-  }
-
-  .form-group.has-error .help-block {
-    display: block;
-  }
-
-.myGrid{
-    width:1200px;
-    height:550px
-}
-
-
-</style>
-  <!--
-  <style type="text/css">
-      .validation{
-        color: maroon;
-      }
-
-  </style>
-  -->
 </head>
 
 <body ng-controller="neosUserController" class="{{cssClass}}">
- <!-- < class="container-fluid"Alineado a la izquierda -->
-<!-- container = alineado al centro -->
-<div  class="container"><!-- Alineado a la izquierda -->
+    <!-- < class="container-fluid"Alineado a la izquierda -->
+    <!-- container = alineado al centro -->
+    <div class="container">
+        <!-- Alineado a la izquierda -->
 
-<div class="row" ng-show="showInfoUser" ><!--ng-click="addItem()"  -->
+        <div class="row" ng-show="showInfoUser">
+            <!--ng-click="addItem()"  -->
 
-<h3>Listado de usuarios </h3>
-<br>
+            <h3>Listado de usuarios </h3>
+            <br>
 
-<div  id="grid" ui-grid="gridOptions" class="myGrid">
+            <div id="grid" ui-grid="gridOptions" class="myGrid">
 
-</div>
-<br>
-<button type="button" class="btn btn-success"  ng-click="agregarUser()">Agregar</button>
+            </div>
+            <br>
+            <button type="button" class="btn btn-success" ng-click="agregarUser()">Agregar</button>
 
-<!--
+            <!--
 <table class="table table-hover table-striped table-bordered table-responsive">
     <thead>
         <tr  bgcolor="#A4A4A4">
@@ -97,204 +73,200 @@
 <button type="button" class="btn btn-success"  ng-click="agregarUser()">Agregar</button>
 
 -->
-</div>
-
-
-<div class="row"  ng-show="showFormUser"><!--ng-click="addItem()"  -->
-	<h3>Alta de usuarios </h3>
-    <p></p>
-
-<div class="row"><!--ng-click="addItem()"  -->
-<form class="form-horizontal"  name="formUser" id="formUser" novalidate rc-submit="addItem(rc.formUser)">
-
-  <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.name)}">
-      <label class="control-label col-xs-2">Nombre:</label>
-      <div class="col-xs-6">
-          <input type="text" ng-model="dataUser.name" type="text" class="form-control input-md"   id="name" name="name"  placeholder="Nombre" required>
-          <div  class="help-block" ng-messages="formUser.name.$error" >
-                <div ng-message="required">El nombre de usuario es requerido</div>
-          </div>
-      </div>
-  </div>
-  <div class="form-group"  ng-class="{'has-error': rc.formUser.needsAttention(formUser.lastName)}">
-      <label class="control-label col-xs-2">Apellido:</label>
-      <div class="col-xs-6">
-          <input ng-model="dataUser.lastName" type="text" class="form-control input-md"  id="lastName" name="lastName"  placeholder="Apellido" required>
-          <div  class="help-block" ng-messages="formUser.lastName.$error" >
-              <div ng-message="required">El apellido es reqierido</div>
-          </div>
-      </div>
-  </div>
-    <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.email)}">
-        <label class="control-label col-xs-2">Email:</label>
-        <div class="col-xs-4">
-            <input  ng-model="dataUser.email" type="text" class="form-control input-md"  id="email" name="email" placeholder="Email" required>
-            <div  class="help-block" ng-messages="formUser.email.$error" >
-                <div ng-message="required">El email es reqierido</div>
-            </div>
         </div>
-    </div>
-    <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.password)}">
-        <label class="control-label col-xs-2">Password:</label>
-        <div class="col-xs-4">
-            <input ng-model="dataUser.password" type="text" class="form-control input-md" id="password" name="password" placeholder="Password" required>
-            <div  class="help-block" ng-messages="formUser.password.$error" >
-                <div ng-message="required">El password es reqierido</div>
-            </div>
+
+
+        <div class="row" ng-show="showFormUser">
+            <!--ng-click="addItem()"  -->
+            <h3>Alta de usuarios </h3>
+            <p></p>
+            <form class="form-horizontal" name="formUser" id="formUser" novalidate rc-submit="addItem(rc.formUser)">
+
+                <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.name)}">
+                    <label class="control-label col-xs-2">Nombre:</label>
+                    <div class="col-xs-6">
+                        <input type="text" ng-model="dataUser.name" type="text" class="form-control input-md" id="name" name="name" placeholder="Nombre"
+                            required>
+                        <div class="help-block" ng-messages="formUser.name.$error">
+                            <div ng-message="required">El nombre de usuario es requerido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.lastName)}">
+                    <label class="control-label col-xs-2">Apellido:</label>
+                    <div class="col-xs-6">
+                        <input ng-model="dataUser.lastName" type="text" class="form-control input-md" id="lastName" name="lastName" placeholder="Apellido"
+                            required>
+                        <div class="help-block" ng-messages="formUser.lastName.$error">
+                            <div ng-message="required">El apellido es reqierido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.email)}">
+                    <label class="control-label col-xs-2">Email:</label>
+                    <div class="col-xs-4">
+                        <input ng-model="dataUser.email" type="text" class="form-control input-md" id="email" name="email" placeholder="Email" required>
+                        <div class="help-block" ng-messages="formUser.email.$error">
+                            <div ng-message="required">El email es reqierido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.password)}">
+                    <label class="control-label col-xs-2">Password:</label>
+                    <div class="col-xs-4">
+                        <input ng-model="dataUser.password" type="text" class="form-control input-md" id="password" name="password" placeholder="Password"
+                            required>
+                        <div class="help-block" ng-messages="formUser.password.$error">
+                            <div ng-message="required">El password es reqierido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.licence)}">
+                    <label class="control-label col-xs-2"></label>
+                    <div class="col-xs-4">
+                        <input ng-model="dataUser.licence" type="checkbox" id="licence" name="licence" placeholder="licence" ng-required="true" />                        Accepto <a href="#" data-toggle="modal" data-target="#myModal">Terminos y condiciones</a>.
+                        <div class="help-block" ng-messages="formUser.licence.$error">
+                            <div ng-message="required">La licencia es requerida</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Terminos y Condiciones</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>"Adaptation" means a work based upon the Work, or upon the Work and other pre-existing works,
+                                    such as a translation, adaptation, derivative work, arrangement of music or other alterations
+                                    of a literary or artistic work, or phonogram or performance and includes cinematographic
+                                    adaptations or any other form in which the Work may be recast, transformed, or adapted
+                                    including in any form recognizably derived from the original, except that a work that
+                                    constitutes a Collection will not be considered an Adaptation for the purpose of this
+                                    License. For the avoidance of doubt, where the Work is a musical work, performance or
+                                    phonogram, the synchronization of the Work in timed-relation with a moving image ("synching")
+                                    will be considered an Adaptation for the purpose of this License.</p>
+
+                                <p>"Collection" means a collection of literary or artistic works, such as encyclopedias and
+                                    anthologies, or performances, phonograms or broadcasts, or other works or subject matter
+                                    other than works listed in Section 1(f) below, which, by reason of the selection and
+                                    arrangement of their contents, constitute intellectual creations, in which the Work is
+                                    included in its entirety in unmodified form along with one or more other contributions,
+                                    each constituting separate and independent works in themselves, which together are assembled
+                                    into a collective whole. A work that constitutes a Collection will not be considered
+                                    an Adaptation (as defined below) for the purposes of this License.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-9">
+                        <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
+                        <button type="button" id="singlebutton2" name="singlebutton2" class="btn btn-primary" ng-click="showOnlyUsers(rc.formUser)">Regresar</button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </div>
-    <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.licence)}">
-        <label class="control-label col-xs-2"></label>
-        <div class="col-xs-4">
-            <input ng-model="dataUser.licence" type="checkbox"  id="licence" name="licence" placeholder="licence" ng-required="true"/>
-            Accepto <a href="#"  data-toggle="modal" data-target="#myModal">Terminos y condiciones</a>.
-            <div  class="help-block" ng-messages="formUser.licence.$error" >
-                <div ng-message="required">La licencia es requerida</div>
-            </div>
-        </div>
-    </div>
 
-    <!--
-    <div class="form-group">
-        <div class="col-xs-offset-2 col-xs-9">
-            <label class="checkbox-inline">
-                <input type="checkbox">Accepto <a href="#"  data-toggle="modal" data-target="#myModal">Terminos y condiciones</a>.
-            </label>
-        </div>
-    </div>
-    -->
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Terminos y Condiciones</h4>
-      </div>
-      <div class="modal-body">
-       <p>"Adaptation" means a work based upon the Work, or upon the Work and other pre-existing works, such as a translation, adaptation, derivative work, arrangement of music or other alterations of a literary or artistic work, or phonogram or performance and includes cinematographic adaptations or any other form in which the Work may be recast, transformed, or adapted including in any form recognizably derived from the original, except that a work that constitutes a Collection will not be considered an Adaptation for the purpose of this License. For the avoidance of doubt, where the Work is a musical work, performance or phonogram, the synchronization of the Work in timed-relation with a moving image ("synching") will be considered an Adaptation for the purpose of this License.</p>
-
-        <p>"Collection" means a collection of literary or artistic works, such as encyclopedias and anthologies, or performances, phonograms or broadcasts, or other works or subject matter other than works listed in Section 1(f) below, which, by reason of the selection and arrangement of their contents, constitute intellectual creations, in which the Work is included in its entirety in unmodified form along with one or more other contributions, each constituting separate and independent works in themselves, which together are assembled into a collective whole. A work that constitutes a Collection will not be considered an Adaptation (as defined below) for the purposes of this License.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-    <br>
-    <div class="form-group">
-        <div class="col-xs-offset-2 col-xs-9">
-          <!--
-            <input type="submit" class="btn btn-primary" value="Enviar">
-          -->
-            <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
-            <button type="button" id="singlebutton2" name="singlebutton2" class="btn btn-primary" ng-click="showOnlyUsers(rc.formUser)" >Regresar</button>
-            <!--
-            <input type="reset" class="btn btn-default" value="Limpiar">
-            -->
-        </div>
-    </div>
-</form>
-</div>
-
-
-
-<!-- Modificar usuario -->
-<div class="row"  ng-show="showModFormUser">
-	<h3>Modificar Informacion Usuario </h3>
-    <br>
-<form class="form-horizontal"  name="formModUser" id="formModUser" novalidate rc-submit="updateItem()">
-<div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formUser.iduser)}">
-      <label class="control-label col-xs-2">IdUsuario:</label>
-      <div class="col-xs-6">
-          <input type="text" ng-model="modUser.iduser"  readonly  type="text" class="form-control input-md"   id="iduser" name="iduser" value="{{modUser.iduser}}" placeholder="IdUsuario">
-      </div>
-  </div>
-  <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.name)}">
-      <label class="control-label col-xs-2">Nombre:</label>
-      <div class="col-xs-6">
-          <input type="text" ng-model="modUser.name" type="text" class="form-control input-md"   id="name" name="name" value="{{modUser.name}}" placeholder="Nombre" required>
-          <div  class="help-block" ng-messages="formModUser.name.$error" >
-                <div ng-message="required">El nombre de usuario es requerido</div>
-          </div>
-      </div>
-  </div>
-  <div class="form-group"  ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.lastname)}">
-      <label class="control-label col-xs-2">Apellido:</label>
-      <div class="col-xs-6">
-          <input ng-model="modUser.lastname" type="text" class="form-control input-md"  id="lastname" name="lastname"  placeholder="Apellido" required>
-          <div  class="help-block" ng-messages="formModUser.lastName.$error" >
-              <div ng-message="required">El apellido es reqierido</div>
-          </div>
-      </div>
-  </div>
-    <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.email)}">
-        <label class="control-label col-xs-2">Email:</label>
-        <div class="col-xs-4">
-            <input  ng-model="modUser.email" readonly type="text" class="form-control input-md"  id="email" name="email" placeholder="Email" required>
-            <div  class="help-block" ng-messages="formModUser.email.$error" >
-                <div ng-message="required">El email es reqierido</div>
-            </div>
-        </div>
-    </div>
-    <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.password)}">
-        <label class="control-label col-xs-2">Password:</label>
-        <div class="col-xs-4">
-            <input ng-model="modUser.password"  readonly type="text" class="form-control input-md" id="password" name="password" placeholder="Password" required>
-            <div  class="help-block" ng-messages="formModUser.password.$error" >
-                <div ng-message="required">El password es reqierido</div>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-2">Status:</label>
-        <div class="col-xs-4">
-           <select class="selectpicker"   data-style="btn-success" disabled>
+        <!-- Modificar usuario   -->
+        <div class="row" ng-show="showModFormUser">
+            <h3>Modificar Informacion Usuario </h3>
+            <br>
+            <form class="form-horizontal" name="formModUser" id="formModUser" novalidate rc-submit="updateItem()">
+                <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formUser.iduser)}">
+                    <label class="control-label col-xs-2">IdUsuario:</label>
+                    <div class="col-xs-6">
+                        <input type="text" ng-model="modUser.iduser" readonly type="text" class="form-control input-md" id="iduser" name="iduser"
+                            value="{{modUser.iduser}}" placeholder="IdUsuario">
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.name)}">
+                    <label class="control-label col-xs-2">Nombre:</label>
+                    <div class="col-xs-6">
+                        <input type="text" ng-model="modUser.name" type="text" class="form-control input-md" id="name" name="name" value="{{modUser.name}}"
+                            placeholder="Nombre" required>
+                        <div class="help-block" ng-messages="formModUser.name.$error">
+                            <div ng-message="required">El nombre de usuario es requerido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.lastname)}">
+                    <label class="control-label col-xs-2">Apellido:</label>
+                    <div class="col-xs-6">
+                        <input ng-model="modUser.lastname" type="text" class="form-control input-md" id="lastname" name="lastname" placeholder="Apellido"
+                            required>
+                        <div class="help-block" ng-messages="formModUser.lastName.$error">
+                            <div ng-message="required">El apellido es reqierido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.email)}">
+                    <label class="control-label col-xs-2">Email:</label>
+                    <div class="col-xs-4">
+                        <input ng-model="modUser.email" readonly type="text" class="form-control input-md" id="email" name="email" placeholder="Email"
+                            required>
+                        <div class="help-block" ng-messages="formModUser.email.$error">
+                            <div ng-message="required">El email es reqierido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.password)}">
+                    <label class="control-label col-xs-2">Password:</label>
+                    <div class="col-xs-4">
+                        <input ng-model="modUser.password" readonly type="text" class="form-control input-md" id="password" name="password" placeholder="Password"
+                            required>
+                        <div class="help-block" ng-messages="formModUser.password.$error">
+                            <div ng-message="required">El password es reqierido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Status:</label>
+                    <div class="col-xs-4">
+                        <select class="selectpicker" data-style="btn-success" disabled>
                 <option>Activo</option>
                 <option>Inactivo</option>
             </select>
+                    </div>
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-9">
+                        <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Modificar</button>
+                    </div>
+                </div>
+            </form>
         </div>
+        <!-- fin modificacion user -->
+
+
     </div>
-    
-    <br>
-    <div class="form-group">
-        <div class="col-xs-offset-2 col-xs-9">
-          <!--
-            <input type="submit" class="btn btn-primary" value="Enviar">
-          -->
-            <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Modificar</button>
-            <!--
-            <input type="reset" class="btn btn-default" value="Limpiar">
-            -->
-        </div>
-    </div>
-</form>
-</div>
+    <!-- inicio - fin -->
 
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="directives/validation.directive.js"></script>
+    <script src="directives/common.directive.js"></script>
+    <script src="app/modules.js"></script>
+    <script src="app/constants.js"></script>
+    <script src="app/services/neos.services.js"></script>
+    <script src="app/controllers/neosUserController.js"></script>
 
-
-</div>
-
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-messages/angular-messages.min.js"></script>
-<script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
-<script src="directives/validation.directive.js"></script>
-<script src="directives/common.directive.js"></script>
-<script src="app/modules.js"></script>
-<script src="app/constants.js"></script>
-<script src="app/services/neos.services.js"></script>
-<script src="app/controllers/neosUserController.js"></script>
-
-<!--
-<script src="index.js"></script>
-
--->
-<loading></loading> <!-- directive loading inside controller -->
+    <loading></loading>
+    <!-- directive loading inside controller -->
 
 </body>
+
 </html>
