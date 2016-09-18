@@ -1,0 +1,17 @@
+ /*forms*/
+        
+        .form-group .help-block {
+            display: none;
+        }
+        
+        .form-group .glyphicon-remove:before {
+            content: "";
+        }
+        
+        .form-group.has-error .glyphicon-remove:before {
+            content: "\e014";
+        }
+        
+        .form-group.has-error .help-block {
+            display: block;
+        }
