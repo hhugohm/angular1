@@ -8,7 +8,7 @@
             enableFiltering: true,
             columnDefs: [
                 {
-                    name: 'iduser', width: '10%', displayName: 'ID', enableFiltering: false, cellTemplate: '<button type="button" class="btn btn-link"  ng-click="grid.appScope.showModUser(row.entity.iduser)">iduser</button>'
+                    field: 'iduser', width: '10%', displayName: 'ID', enableFiltering: false, cellTemplate: '<button type="button" class="btn btn-link"  ng-click="grid.appScope.showModUser(row.entity.iduser)">{{grid.getCellValue(row, col)}}</button>'
                 },
                 {
                     field: 'name', displayName: 'Nombre', enableFiltering: true
