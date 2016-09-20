@@ -30,9 +30,6 @@
             ]
         }
 
-
-
-
         $scope.users = [];
         $scope.modUser = {};
         $scope.showFormUser = false;
