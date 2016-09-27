@@ -1,0 +1,101 @@
+<div class="row" ng-show="showFormUser">
+    <!--ng-click="addItem()"  -->
+    <h3>Alta de usuarios </h3>
+    <p></p>
+    <form class="form-horizontal" name="formUser" id="formUser" novalidate rc-submit="addItem(rc.formUser)">
+
+        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.name)}">
+            <label class="control-label col-xs-2">Nombre:</label>
+            <div class="col-xs-6">
+                <input type="text" ng-model="dataUser.name" type="text" class="form-control input-md" id="name" name="name" placeholder="Nombre"
+                    required>
+                <div class="help-block" ng-messages="formUser.name.$error">
+                    <div ng-message="required">El nombre de usuario es requerido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.lastName)}">
+            <label class="control-label col-xs-2">Apellido:</label>
+            <div class="col-xs-6">
+                <input ng-model="dataUser.lastName" type="text" class="form-control input-md" id="lastName" name="lastName" placeholder="Apellido"
+                    required>
+                <div class="help-block" ng-messages="formUser.lastName.$error">
+                    <div ng-message="required">El apellido es reqierido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.email)}">
+            <label class="control-label col-xs-2">Email:</label>
+            <div class="col-xs-4">
+                <input ng-model="dataUser.email" type="text" class="form-control input-md" id="email" name="email" placeholder="Email" required>
+                <div class="help-block" ng-messages="formUser.email.$error">
+                    <div ng-message="required">El email es reqierido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.password)}">
+            <label class="control-label col-xs-2">Password:</label>
+            <div class="col-xs-4">
+                <input ng-model="dataUser.password" type="text" class="form-control input-md" id="password" name="password" placeholder="Password"
+                    required>
+                <div class="help-block" ng-messages="formUser.password.$error">
+                    <div ng-message="required">El password es reqierido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.licence)}">
+            <label class="control-label col-xs-2"></label>
+            <div class="col-xs-4">
+                <input ng-model="dataUser.licence" type="checkbox" id="licence" name="licence" placeholder="licence" ng-required="true" />                Accepto <a href="#" data-toggle="modal" data-target="#myModal">Terminos y condiciones</a>.
+                <div class="help-block" ng-messages="formUser.licence.$error">
+                    <div ng-message="required">La licencia es requerida</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Terminos y Condiciones</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>"Adaptation" means a work based upon the Work, or upon the Work and other pre-existing works, such
+                            as a translation, adaptation, derivative work, arrangement of music or other alterations of a
+                            literary or artistic work, or phonogram or performance and includes cinematographic adaptations
+                            or any other form in which the Work may be recast, transformed, or adapted including in any form
+                            recognizably derived from the original, except that a work that constitutes a Collection will
+                            not be considered an Adaptation for the purpose of this License. For the avoidance of doubt,
+                            where the Work is a musical work, performance or phonogram, the synchronization of the Work in
+                            timed-relation with a moving image ("synching") will be considered an Adaptation for the purpose
+                            of this License.</p>
+
+                        <p>"Collection" means a collection of literary or artistic works, such as encyclopedias and anthologies,
+                            or performances, phonograms or broadcasts, or other works or subject matter other than works
+                            listed in Section 1(f) below, which, by reason of the selection and arrangement of their contents,
+                            constitute intellectual creations, in which the Work is included in its entirety in unmodified
+                            form along with one or more other contributions, each constituting separate and independent works
+                            in themselves, which together are assembled into a collective whole. A work that constitutes
+                            a Collection will not be considered an Adaptation (as defined below) for the purposes of this
+                            License.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-9">
+                <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
+                <button type="button" id="singlebutton2" name="singlebutton2" class="btn btn-primary" ng-click="showOnlyUsers(rc.formUser)">Regresar</button>
+            </div>
+        </div>
+    </form>
+</div>

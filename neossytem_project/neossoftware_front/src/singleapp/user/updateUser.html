@@ -1,0 +1,73 @@
+<!-- Modificar usuario  
+<div class="row" ng-show="showModFormUser">
+     -->
+    <h3>Modificar Informacion Usuario </h3>
+    <br>
+    <form class="form-horizontal" name="formModUser" id="formModUser" novalidate rc-submit="updateItem()">
+        <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formUser.iduser)}">
+            <label class="control-label col-xs-2">IdUsuario:</label>
+            <div class="col-xs-6">
+                <input type="text" ng-model="modUser.iduser" readonly type="text" class="form-control input-md" id="iduser" name="iduser"
+                    value="{{modUser.iduser}}" placeholder="IdUsuario">
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.name)}">
+            <label class="control-label col-xs-2">Nombre:</label>
+            <div class="col-xs-6">
+                <input type="text" ng-model="modUser.name" type="text" class="form-control input-md" id="name" name="name" value="{{modUser.name}}"
+                    placeholder="Nombre" required>
+                <div class="help-block" ng-messages="formModUser.name.$error">
+                    <div ng-message="required">El nombre de usuario es requerido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.lastname)}">
+            <label class="control-label col-xs-2">Apellido:</label>
+            <div class="col-xs-6">
+                <input ng-model="modUser.lastname" type="text" class="form-control input-md" id="lastname" name="lastname" placeholder="Apellido"
+                    required>
+                <div class="help-block" ng-messages="formModUser.lastName.$error">
+                    <div ng-message="required">El apellido es reqierido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.email)}">
+            <label class="control-label col-xs-2">Email:</label>
+            <div class="col-xs-4">
+                <input ng-model="modUser.email" readonly type="text" class="form-control input-md" id="email" name="email" placeholder="Email"
+                    required>
+                <div class="help-block" ng-messages="formModUser.email.$error">
+                    <div ng-message="required">El email es reqierido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rc.formModUser.needsAttention(formModUser.password)}">
+            <label class="control-label col-xs-2">Password:</label>
+            <div class="col-xs-4">
+                <input ng-model="modUser.password" readonly type="text" class="form-control input-md" id="password" name="password" placeholder="Password"
+                    required>
+                <div class="help-block" ng-messages="formModUser.password.$error">
+                    <div ng-message="required">El password es reqierido</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2">Status:</label>
+            <div class="col-xs-4">
+                <select class="selectpicker" data-style="btn-success" disabled>
+                <option>Activo</option>
+                <option>Inactivo</option>
+            </select>
+            </div>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-9">
+                <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Modificar</button>
+            </div>
+        </div>
+    </form>
+    <!-- 
+</div> 
+fin modificacion user -->
