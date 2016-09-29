@@ -13,7 +13,7 @@
                 {
                     field: 'name', displayName: 'Nombre', enableFiltering: true
                 }, {
-                    field: 'lastname', displayName: 'Apellido', enableFiltering: false
+                    field: 'lastname', displayName: 'LO MOVI', enableFiltering: false
                 }, {
                     field: 'email', displayName: 'Email', enableFiltering: false
                 }, {
