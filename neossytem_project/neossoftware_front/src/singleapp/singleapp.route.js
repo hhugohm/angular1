@@ -14,14 +14,14 @@ angular.module('neosApplication').config(function($stateProvider, $urlRouterProv
             controller: 'NeosUserController'
         })
         .state('modifica', {
-            url: "/modifica",
+            url: "/modifica/:ID",
             templateUrl: "/singleapp/user/updateUser.html",
-            controller: 'NeosUserController'
+            controller: 'ModificaUserController'
         })
         .state('alta', {
             url: "/alta",
             templateUrl: "/singleapp/user/altaUser.html",
-            controller: 'NeosUserController'
+            controller: 'AltaUserController'
         })
     });
 
