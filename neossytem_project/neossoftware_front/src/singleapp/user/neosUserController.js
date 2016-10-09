@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular.module('neosApplication').controller('NeosUserController', NeosUserController);
-    function NeosUserController($scope, userApi, $timeout) {
+    function NeosUserController($scope, userApi, $timeout,$location) {
         $scope.gridOptions = {
             enableSorting: true,
             enableCellEditOnFocus: true,
@@ -72,20 +72,7 @@
         };
 
 
-        $scope.addItem = function (rc) {
-
-            // alert('SE VAN A GURDAR LOS ELEMENTOS');
-            userApi.createUser($scope.dataUser)
-                .success(function (data) {
-                    console.log(data);
-                    cleanUserForm(rc);
-                    getUsersData();
-                    showUsers();
-                })
-                .error(function (data) {
-                    console.log(data);
-                });
-        };
+       
         $scope.updateItem = function () {
             userApi.updateUser($scope.modUser)
                 .success(function (data) {
@@ -114,17 +101,9 @@
 
         $scope.showModUser = function (idUser) {
             console.log("USER MOD: " + idUser);
-            userApi.getUser(idUser)
-                .success(function (data) {
-                    console.log(data);
-                    $scope.modUser = data;
-                    $scope.showInfoUser = false;
-                    $scope.showModFormUser = true;
-                    console.log($scope.modUser.name);
-                })
-                .error(function (data) {
-                    console.log(data);
-                });
+             console.log($location.path);
+             $location.path( '/modifica/' +idUser );
+            
         };
 
 
