@@ -67,6 +67,7 @@
                 })
                 .error(function (data) {
                     $scope.loading = false;
+                    $scope.onServerError = true;
                     console.log(data);
                 });
         };
