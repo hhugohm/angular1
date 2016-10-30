@@ -20,7 +20,8 @@ userDAO.createUserDAO = function (data, cb) {
                 password: data.password,
                 update_date: new Date(),
                 create_date: new Date(),
-                status: appConstant.ACTIVE
+                status: data.status.id
+                //status: appConstant.ACTIVE
             },{transaction: tx
         }).then(function(user){
               cb(null, user);
