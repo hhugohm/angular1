@@ -7,7 +7,7 @@
       $scope.error={};
 
        $scope.addItem = function (rc) {
-
+ //$scope.dataUser.statusId  = $scope.dataUser.status.id;
             // alert('SE VAN A GURDAR LOS ELEMENTOS');
             userApi.createUser($scope.dataUser)
                 .success(function (data) {
