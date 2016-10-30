@@ -14,6 +14,7 @@ service.createUser=function (dataUser) {
                                              'Content-Type': 'application/json'
                                          }
                                 }
+								console.log("data alta" +data);
 		            return $http.post(url,data,config);
 		        }; 
 

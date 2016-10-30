@@ -1,16 +1,15 @@
 <div class="row">
-    <!--ng-click="addItem()"  -->
     <h3>Alta de usuarios </h3>
     <p></p>
     <form class="form-horizontal" name="formUser" id="formUser" novalidate rc-submit="addItem(rc.formUser)">
 
         <div class="alert alert-success" ng-show="altasuccess">
-  <strong>Success!</strong> Indicates a successful or positive action.
-</div>
+            <strong>Alta correcta del Usurio</strong>
+        </div>
 
-<div class="alert alert-danger" ng-show="altafailure">
-  <strong>Danger!</strong> {{error}}
-</div>
+        <div class="alert alert-danger" ng-show="altafailure">
+            <strong>Danger!</strong> {{error}}
+        </div>
 
         <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.name)}">
             <label class="control-label col-xs-2">Nombre:</label>
@@ -51,6 +50,26 @@
                 </div>
             </div>
         </div>
+
+        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.status)}">  
+            <label class="control-label col-xs-2">Estatus:</label>
+            <div class="col-xs-4">
+                <ui-select ng-model="dataUser.status" theme="bootstrap" ng-required="true" id="status"  >
+                    <ui-select-match placeholder="Selecciona un estatus">
+                        <span ng-bind="$select.selected.statusDescription"></span>
+                    </ui-select-match>
+                    <ui-select-choices repeat="item in (statusList | filter: $select.search) track by item.statusDescription">
+                        {{item.id}}-<span ng-bind="item.statusDescription"></span>
+                    </ui-select-choices>
+                </ui-select>
+                <div class="help-block" ng-messages="formUser.status.$error">
+                    <div ng-message="required">El estatus es requerido</div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.licence)}">
             <label class="control-label col-xs-2"></label>
             <div class="col-xs-4">
@@ -89,7 +108,8 @@
                             form along with one or more other contributions, each constituting separate and independent works
                             in themselves, which together are assembled into a collective whole. A work that constitutes
                             a Collection will not be considered an Adaptation (as defined below) for the purposes of this
-                            License.</p>
+                            License.
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -102,8 +122,7 @@
         <div class="form-group">
             <div class="col-xs-offset-2 col-xs-9">
                 <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Guardar</button>
-                 <a ng-href="#/user"> <button type="button" class="btn btn-success" >Regresar</button></a>
-                <!--cambio -->
+                <a ng-href="#/user"> <button type="button" class="btn btn-success">Regresar</button></a>
             </div>
         </div>
     </form>
