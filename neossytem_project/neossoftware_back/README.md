@@ -24,6 +24,30 @@ mysql: {
 }
 ```
 
+Install nodemon
+
+```
+npm install -g nodemon
+```
+
+
 Then execute :
 
-`$ npm start
+```sh
+$ npm install
+$ npm start
+```
+
+common output is :
+
+```sh
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node src/api.js`
+#######ADD TO MODEL: user.js
+Loading routes from: /home/neossoftware/development/angularjs/angular1/neossytem_project/neossoftware_back/src/controllers/api/user/index.js
+bccertifications listening at http://[::]:8085
+Executing (default): SELECT 1+1 AS result
+Connection to mysql has been established successfully
+```
