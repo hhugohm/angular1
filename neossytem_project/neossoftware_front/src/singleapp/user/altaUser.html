@@ -51,10 +51,10 @@
             </div>
         </div>
 
-        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.status)}">  
+        <div class="form-group" ng-class="{'has-error': rc.formUser.needsAttention(formUser.status)}">
             <label class="control-label col-xs-2">Estatus:</label>
             <div class="col-xs-4">
-                <ui-select ng-model="dataUser.status" theme="bootstrap" ng-required="true" id="status"  >
+                <ui-select ng-model="dataUser.status" theme="bootstrap" ng-required="true" name="status"  >
                     <ui-select-match placeholder="Selecciona un estatus">
                         <span ng-bind="$select.selected.statusDescription"></span>
                     </ui-select-match>
