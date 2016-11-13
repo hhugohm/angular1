@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular.module('neosApplication').controller('NeosUserController', NeosUserController);
-    function NeosUserController($scope, userApi, $timeout,$location) {
+    function NeosUserController($scope, userApi, $timeout,$location,SweetAlert) {
         $scope.gridOptions = {
             enableSorting: true,
             enableCellEditOnFocus: true,
@@ -25,7 +25,9 @@
                 }, {
                     field: 'status', displayName: 'Estatus', enableFiltering: false
                 }, {
-                    field: 'iduser', displayName: 'Borrar', enableFiltering: false, enableSorting: false, enableCellEdit: false, cellTemplate: '<button type="button" class="btn btn-link"  ng-click="grid.appScope.deleUser(row.entity.iduser)" >Delete</button>'
+                    field: 'iduser', displayName: 'Borrar', enableFiltering: false, enableSorting: false,
+                     enableCellEdit: false,
+                     cellTemplate: '<button type="button" class="btn btn-link"  ng-click="grid.appScope.deleUser(row.entity.iduser)" >Delete</button>'
                 }
             ]
         }
@@ -73,7 +75,7 @@
         };
 
 
-       
+
         $scope.updateItem = function () {
             userApi.updateUser($scope.modUser)
                 .success(function (data) {
@@ -89,22 +91,39 @@
 
         $scope.deleUser = function (idUser) {
             console.log("USER BORRAR: " + idUser);
-            userApi.deleUser(idUser)
-                .success(function (data) {
-                    console.log(data);
-                    getUsersData();
-                    showUsers();
-                })
-                .error(function (data) {
-                    console.log(data);
-                });
+            SweetAlert.swal({
+                 title: "Eliminar", //Bold text
+                 text: "Estas seguro de eliminar el usuario?", //light text
+                 type: "warning", //type -- adds appropiriate icon
+                 showCancelButton: true, // displays cancel btton
+                 confirmButtonColor: "#DD6B55",
+                 confirmButtonText: "Yes",
+                 closeOnConfirm: true, //do not close popup after click on confirm, usefull when you want to display a subsequent popup
+                 closeOnCancel: true
+             },
+             function(isConfirm){ //Function that triggers on user action.
+                 if(isConfirm){
+                   userApi.deleUser(idUser)
+                       .success(function (data) {
+                           console.log(data);
+                           getUsersData();
+                           showUsers();
+                       })
+                       .error(function (data) {
+                           console.log(data);
+                       });
+                 }
+             });
+
+
+
         };
 
         $scope.showModUser = function (idUser) {
             console.log("USER MOD: " + idUser);
              console.log($location.path);
              $location.path( '/modifica/' +idUser );
-            
+
         };
 
 

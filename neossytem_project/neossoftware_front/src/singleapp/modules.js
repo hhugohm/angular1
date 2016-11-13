@@ -1,5 +1,6 @@
 (function(){
 'use strict';
- angular.module('neosApplication', 
- ['ngMessages','ui.bootstrap.validation','common.directives','ui.grid','ui.router','ngSanitize','ui.select']);
+ angular.module('neosApplication',
+ ['ngMessages','ui.bootstrap.validation','common.directives','ui.grid',
+ 'ui.router','ngSanitize','ui.select','oitozero.ngSweetAlert']);
 })();
