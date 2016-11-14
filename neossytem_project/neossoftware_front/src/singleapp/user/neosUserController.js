@@ -23,7 +23,8 @@
                 }, {
                     field: 'updateDate', displayName: 'Fecha Mod', enableFiltering: false
                 }, {
-                    field: 'status', displayName: 'Estatus', enableFiltering: false
+                    field: 'status', displayName: 'Estatus', enableFiltering: false,
+                    cellTemplate: '<div ng-if="row.entity.status == 0">Inactivo</div><div ng-if="row.entity.status == 1">Inactivo</div>'
                 }, {
                     field: 'iduser', displayName: 'Borrar', enableFiltering: false, enableSorting: false,
                      enableCellEdit: false,
