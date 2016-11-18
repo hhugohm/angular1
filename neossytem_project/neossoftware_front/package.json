@@ -6,7 +6,7 @@
     "scripts": {
         "postinstall": "bower install",
         "prestart": "npm install",
-        "start": "http-server ./src -a localhost -p 8080 c-1",
+        "start": "gulp",
         "pretest": "npm install"
     },
     "keywords": [],
@@ -28,8 +28,10 @@
         "gulp-buffer": "0.0.2",
         "gulp-cachebust": "0.0.6",
         "gulp-clean": "^0.3.2",
+        "gulp-inject": "~3.0.0",
         "gulp-load-plugins": "~0.10.0",
         "gulp-minify-css": "^1.2.4",
+        "gulp-replace": "~0.5.4",
         "gulp-sass": "^2.3.2",
         "gulp-uglify": "^2.0.0",
         "gulp-util": "^3.0.7",

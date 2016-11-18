@@ -1,55 +1,29 @@
 <!DOCTYPE html>
 <html ng-app="neosApplication">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,  initial-scale=1">
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-    <link href="bower_components/angular-ui-grid/ui-grid.min.css" rel="stylesheet" />
-    <link href="bower_components/angular-ui-select/dist/select.min.css" rel="stylesheet" />
-    <link href="bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
-    <link href="css/loading.css" rel="stylesheet" />
-    <link href="css/error.form.css" rel="stylesheet" />
-    <link href="css/grid.ui.css" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+        <!-- bower:css -->
+        <!-- endbower -->
 
-<body class="{{cssClass}}">
-    <div class="container">
-        <div ui-view></div>
-    </div>
+        <!-- inject:css -->
+        <!-- endinject -->
 
-    <!-- bower:js -->
-     <!-- endbower -->
-<!--
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-ui-select/dist/select.min.js"></script>
-    <script src="bower_components/ngSweetAlert/SweetAlert.min.js"></script>
-    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
-  -->
+    </head>
 
-    <!--
-    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    -->
-    <script src="directives/validation.directive.js"></script>
-    <script src="directives/common.directive.js"></script>
-    <script src="singleapp/modules.js"></script>
-    <script src="singleapp/constants.js"></script>
-    <script src="singleapp/singleapp.route.js"></script>
-    <script src="singleapp/user/neosUserController.js"></script>
-    <script src="singleapp/user/altaUser.controller.js"></script>
-    <script src="singleapp/user/modificaUser.controller.js"></script>
+    <body class="{{cssClass}}">
+        <div class="container">
+            <div ui-view></div>
+        </div>
 
-    <script src="singleapp/service/neos.services.js"></script>
+        <!-- bower:js -->
+        <!-- endbower -->
 
-    <!-- jQuery library -
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    -->
-    <loading></loading>
-</body>
+        <!-- inject:js -->
+        <!-- endinject -->
+
+        <loading></loading>
+    </body>
 
 </html>
